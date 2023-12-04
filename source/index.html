@@ -20,66 +20,74 @@
 </head>
 
 <body>
-  <section class="hero">
+  <header class="header header--opened">
+    <div class="header__container container">
+      <div class="header__wrapper">
+        <a class="header__logo logo">
+          <svg width="142" height="42" viewBox="0 0 142 42" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite.svg#logotype"></use>
+          </svg>
+        </a>
+        <button class="header__nav-toggle" type="button" aria-label="открыть меню">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="header__nav">
+          <div class="header__nav-wrapper">
+            <ul class="header__list">
+              <li class="header__item">
+                <a class="header__link" href="#">
+                  Туры
+                </a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#">
+                  Обучение
+                </a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#">
+                  О нас
+                </a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#">
+                  Отзывы
+                </a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#">
+                  Фотографии
+                </a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <a class="header__contact" href="tel:88007253232">8 800 725-32-32</a>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- <section class="hero">
     <div class="hero__picture">
       <picture>
-        <!-- <source type="image/webp" media="(max-width: 767px)" srcset="img/background-mobile.webp 1x, img/background-mobile@2x.webp 2x">
+        <source type="image/webp" media="(max-width: 767px)" srcset="img/background-mobile.webp 1x, img/background-mobile@2x.webp 2x">
         <source type="image/webp" media="(max-width: 1199px)"
           srcset="img/background-tablet.webp 1x, img/background-tablet@2x.webp 2x">
         <source type="image/webp" srcset="img/background.webp 1x, img/background@2x.webp 2x">
         <source media="(max-width: 767px)" srcset="img/background-mobile.png 1x, img/background-mobile@2x.png 2x">
-        <source media="(max-width: 1199px)" srcset="img/background-tablet.png 1x, img/background-tablet@2x.png 2x"> -->
+        <source media="(max-width: 1199px)" srcset="img/background-tablet.png 1x, img/background-tablet@2x.png 2x">
         <img src="img/background.png" srcset="img/background@2x.png 2x" width="1440" height="800"
           alt="Самый хороший спортзал!">
       </picture>
       <div class="hero__container container">
-        <header class="header">
-          <div class="header__container container">
-            <div class="header__wrapper">
-              <a class="header__logo logo"><img class="logo" alt="Логотип Путешествия" src="img/svg/logotype.svg">
-              </a>
-              <nav class="header__nav header__nav--closed header__nav--nojs">
-                <button class="header__nav--toggle" type="button"><span class="visually-hidden">Открыть
-                    меню</span></button>
-                <div class="header__nav--wrapper">
-                  <ul class="header__list">
-                    <li class="header__list--item">
-                      <a class="header__list--link" href="#">
-                        Туры
-                      </a>
-                    </li>
-                    <li class="header__list--item">
-                      <a class="header__list--link" href="#">
-                        Обучение
-                      </a>
-                    </li>
-                    <li class="header__list--item">
-                      <a class="header__list--link" href="#">
-                        О нас
-                      </a>
-                    </li>
-                    <li class="header__list--item">
-                      <a class="header__list--link" href="#">
-                        Отзывы
-                      </a>
-                    </li>
-                    <li class="header__list--item">
-                      <a class="header__list--link" href="#">
-                        Фотографии
-                      </a>
-                    </li>
-                    <li class="header__list--item">
-                      <a class="header__list--link" href="#">
-                        Контакты
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </nav>
-              <a class="header__contact" href="tel:88007253232">8 800 725-32-32</a>
-            </div>
-          </div>
-        </header>
         <div class="hero__wrapper">
           <div class="hero__slide hero__slide--active">
             <div class="hero__video hero__video--repeat" data-video="video"
@@ -88,10 +96,10 @@
             <div class="hero__video-picture">
               <a class="hero__video-link" href="https://www.youtube.com/watch?v=9TZXsZItgdw">
                 <picture>
-                  <!-- <source type="image/webp" media="(max-width: 1199px)"
+                  <source type="image/webp" media="(max-width: 1199px)"
                   srcset="img/video-tablet.webp 1x, img/video-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="img/video.webp 1x, img/video@2x.webp 2x">
-                <source media="(max-width: 1199px)" srcset="img/video-tablet.png 1x, img/video-tablet@2x.png 2x"> -->
+                <source media="(max-width: 1199px)" srcset="img/video-tablet.png 1x, img/video-tablet@2x.png 2x">
                   <img src="img/video.png" srcset="img/video@2x.png 2x" width="482" height="317"
                     alt="Самые красивые места!">
                 </picture>
@@ -133,18 +141,18 @@
           <div class="hero__slide">
             <div class="hero__image">
               <picture>
-                <!-- <source type="image/webp" media="(max-width: 1200px)"
+                <source type="image/webp" media="(max-width: 1200px)"
                 srcset="img/photo-one-tablet.webp 1x, img/photo-one-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/photo-one.webp 1x, img/photo-one@2x.webp 2x">
-              <source media="(max-width: 1200px)" srcset="img/photo-one-tablet.png 1x, img/photo-one-tablet@2x.png 2x"> -->
+              <source media="(max-width: 1200px)" srcset="img/photo-one-tablet.png 1x, img/photo-one-tablet@2x.png 2x">
                 <img src="img/photo-one.png" srcset="img/photo-one@2x.png 2x" width="308" height="407"
                   alt="Озеро среди гор!">
               </picture>
               <picture>
-                <!-- <source type="image/webp" media="(max-width: 1200px)"
+                <source type="image/webp" media="(max-width: 1200px)"
                 srcset="img/photo-two-tablet.webp 1x, img/photo-two-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/photo-two.webp 1x, img/photo-two@2x.webp 2x">
-              <source media="(max-width: 1200px)" srcset="img/photo-two-tablet.png 1x, img/photo-two-tablet@2x.png 2x"> -->
+              <source media="(max-width: 1200px)" srcset="img/photo-two-tablet.png 1x, img/photo-two-tablet@2x.png 2x">
                 <img src="img/photo-two.png" srcset="img/photo-two@2x.png 2x" width="277" height="366"
                   alt="Где-то вгорах!">
               </picture>
@@ -179,10 +187,10 @@
           <div class="hero__slide">
             <div class="hero__image">
               <picture>
-                <!-- <source type="image/webp" media="(max-width: 1200px)"
+                <source type="image/webp" media="(max-width: 1200px)"
                 srcset="img/video-tablet.webp 1x, img/video-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/video.webp 1x, img/video@2x.webp 2x">
-              <source media="(max-width: 1200px)" srcset="img/video-tablet.png 1x, img/video-tablet@2x.png 2x"> -->
+              <source media="(max-width: 1200px)" srcset="img/video-tablet.png 1x, img/video-tablet@2x.png 2x">
                 <img src="img/video.png" srcset="img/video@2x.png 2x" width="482" height="317"
                   alt="Самые красивые места!">
               </picture>
@@ -221,7 +229,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
 
 
@@ -230,10 +238,10 @@
 
 
 
-  <main>
-  </main>
+  <!-- <main>
+  </main> -->
 
-  <footer class="footer">
+  <!-- <footer class="footer">
     <div class="footer__container container">
       <div class="footer__wrapper">
         <a class="footer__logo logo"><img class="logo" alt="Логотип Путешествия" src="img/svg/logotype-footer.svg">
@@ -304,7 +312,7 @@
       </div>
       <a class="footer__privacy" href="#">Политика конфиденциальности</a>
     </div>
-  </footer>
+  </footer> -->
 
   <!-- Модалки
   <div class="modal modal--preload" data-modal="feedback">
