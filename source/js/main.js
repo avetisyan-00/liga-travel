@@ -3,6 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {menuToggle} from './modules/menu';
 import {findVideos} from './/video';
+import {initSliderHero} from './modules/slide-hero';
 
 // ---------------------------------
 
@@ -14,6 +15,7 @@ window.addEventListener('DOMContentLoaded', () => {
   iosVhFix();
   findVideos();
   menuToggle();
+  initSliderHero();
   // Modules
   // ---------------------------------
 

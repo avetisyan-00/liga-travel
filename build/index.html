@@ -75,46 +75,23 @@
   </header>
 
   <main>
-    <section class="hero">
-      <div class="hero__wrapper">
-        <div class="hero__slide hero__slide--active">
+    <section class="hero swiper">
+      <div class="hero__wrapper swiper-wrapper">
+        <div class="hero__slide hero__slide--active swiper-slide">
           <div class="hero__background">
             <picture>
-              <!-- <source type="image/webp" media="(max-width: 767px)"
+              <source type="image/webp" media="(max-width: 767px)"
               srcset="img/background-mobile.webp 1x, img/background-mobile@2x.webp 2x">
             <source type="image/webp" media="(max-width: 1199px)"
               srcset="img/background-tablet.webp 1x, img/background-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/background.webp 1x, img/background@2x.webp 2x">
             <source media="(max-width: 767px)" srcset="img/background-mobile.png 1x, img/background-mobile@2x.png 2x">
-            <source media="(max-width: 1199px)" srcset="img/background-tablet.png 1x, img/background-tablet@2x.png 2x"> -->
+            <source media="(max-width: 1199px)" srcset="img/background-tablet.png 1x, img/background-tablet@2x.png 2x">
               <img src="img/background.png" srcset="img/background@2x.png 2x" width="1440" height="800"
                 alt="Самый хороший спортзал!">
             </picture>
           </div>
           <div class="hero__container container">
-            <div class="hero__video hero__video--repeat" data-video="video"
-              data-src="https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1">
-              <h2 class="visually-hidden">Видео гор.</h2>
-              <div class="hero__video-picture">
-                <a class="hero__video-link" href="https://www.youtube.com/watch?v=9TZXsZItgdw">
-                  <picture>
-                    <!-- <source type="image/webp" media="(max-width: 1199px)"
-                      srcset="img/video-tablet.webp 1x, img/video-tablet@2x.webp 2x">
-                    <source type="image/webp" srcset="img/video.webp 1x, img/video@2x.webp 2x">
-                    <source media="(max-width: 1199px)" srcset="img/video-tablet.png 1x, img/video-tablet@2x.png 2x"> -->
-                    <img src="img/video.png" srcset="img/video@2x.png 2x" width="482" height="317"
-                      alt="Самые красивые места!">
-                  </picture>
-                </a>
-                <button class="hero__video-play" type="button">
-                  <svg width="12" height="22" viewBox="0 0 12 22" fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="img/sprite.svg#arrow"></use>
-                  </svg>
-                  <span class="visually-hidden">Запустить видео.</span>
-                </button>
-              </div>
-            </div>
             <div class="hero__header">
               <h2 class="hero__title">Захватывающие вершины&nbsp;Кавказа</h2>
               <p class="hero__description">
@@ -140,46 +117,49 @@
                 </span>
               </div>
             </div>
+            <div class="hero__video hero__video--repeat" data-video="video"
+            data-src="https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1">
+            <h2 class="visually-hidden">Видео гор.</h2>
+            <div class="hero__video-picture">
+              <a class="hero__video-link" href="https://www.youtube.com/watch?v=9TZXsZItgdw">
+                <picture>
+                  <source type="image/webp" media="(max-width: 1199px)"
+                    srcset="img/video-tablet.webp 1x, img/video-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/video.webp 1x, img/video@2x.webp 2x">
+                  <source media="(max-width: 1199px)" srcset="img/video-tablet.png 1x, img/video-tablet@2x.png 2x">
+                  <img src="img/video.png" srcset="img/video@2x.png 2x" width="482" height="317"
+                    alt="Самые красивые места!">
+                </picture>
+              </a>
+              <button class="hero__video-play" type="button">
+                <svg width="12" height="22" viewBox="0 0 12 22" fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#arrow"></use>
+                </svg>
+                <span class="visually-hidden">Запустить видео.</span>
+              </button>
+            </div>
+          </div>
           </div>
         </div>
-        <div class="hero__slide">
+        <div class="hero__slide swiper-slide">
           <div class="hero__background">
             <picture>
-              <!-- <source type="image/webp" media="(max-width: 767px)"
+              <source type="image/webp" media="(max-width: 767px)"
               srcset="img/background-two-mobile.webp 1x, img/background-two-mobile@2x.webp 2x">
             <source type="image/webp" media="(max-width: 1199px)"
               srcset="img/background-two-tablet.webp 1x, img/background-two-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/background-two.webp 1x, img/background-two@2x.webp 2x">
             <source media="(max-width: 767px)" srcset="img/background-two-mobile.png 1x, img/background-two-mobile@2x.png 2x">
-            <source media="(max-width: 1199px)" srcset="img/background-two-tablet.png 1x, img/background-two-tablet@2x.png 2x"> -->
+            <source media="(max-width: 1199px)" srcset="img/background-two-tablet.png 1x, img/background-two-tablet@2x.png 2x">
               <img src="img/background-two.png" srcset="img/background-two@2x.png 2x" width="1440" height="800"
                 alt="Горы Камчатки!">
             </picture>
           </div>
           <div class="hero__container container">
-            <div class="hero__image">
-              <picture>
-                <!-- <source type="image/webp" media="(max-width: 1200px)"
-                  srcset="img/photo-one-tablet.webp 1x, img/photo-one-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/photo-one.webp 1x, img/photo-one@2x.webp 2x">
-                <source media="(max-width: 1200px)"
-                  srcset="img/photo-one-tablet.png 1x, img/photo-one-tablet@2x.png 2x"> -->
-                <img src="img/photo-one.png" srcset="img/photo-one@2x.png 2x" width="308" height="407"
-                  alt="Озеро среди гор!">
-              </picture>
-              <picture>
-                <!-- <source type="image/webp" media="(max-width: 1200px)"
-                  srcset="img/photo-two-tablet.webp 1x, img/photo-two-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/photo-two.webp 1x, img/photo-two@2x.webp 2x">
-                <source media="(max-width: 1200px)"
-                  srcset="img/photo-two-tablet.png 1x, img/photo-two-tablet@2x.png 2x"> -->
-                <img src="img/photo-two.png" srcset="img/photo-two@2x.png 2x" width="277" height="366"
-                  alt="Где-то в горах!">
-              </picture>
-            </div>
             <div class="hero__header">
               <h2 class="hero__title">Невероятная
-                природа Камчатки</h2>
+                природа&nbsp;Камчатки</h2>
               <p class="hero__description">
                 Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых
                 уголков
@@ -203,34 +183,35 @@
                 </span>
               </div>
             </div>
+            <div class="hero__image">
+              <picture>
+                <source type="image/webp" media="(max-width: 1199px)"
+                  srcset="img/photo-cards-tablet.webp 1x, img/photo-cards-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-cards.webp 1x, img/photo-cards@2x.webp 2x">
+                <source media="(max-width: 1199px)"
+                  srcset="img/photo-cards-tablet.png 1x, img/photo-cards-tablet@2x.png 2x">
+                <img src="img/photo-cards.png" srcset="img/photo-cards@2x.png 2x" width="410" height="459"
+                  alt="Озеро среди гор!">
+              </picture>
+            </div>
           </div>
         </div>
-        <div class="hero__slide">
+        <div class="hero__slide swiper-slide">
           <div class="hero__background">
             <picture>
-              <!-- <source type="image/webp" media="(max-width: 767px)"
+              <source type="image/webp" media="(max-width: 767px)"
               srcset="img/background-three-mobile.webp 1x, img/background-three-mobile@2x.webp 2x">
             <source type="image/webp" media="(max-width: 1199px)"
               srcset="img/background-three-tablet.webp 1x, img/background-three-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/background-three.webp 1x, img/background-three@2x.webp 2x">
             <source media="(max-width: 767px)" srcset="img/background-three-mobile.png 1x, img/background-three-mobile@2x.png 2x">
-            <source media="(max-width: 1199px)" srcset="img/background-three-tablet.png 1x, img/background-three-tablet@2x.png 2x"> -->
+            <source media="(max-width: 1199px)" srcset="img/background-three-tablet.png 1x, img/background-three-tablet@2x.png 2x">
               <img src="img/background-three.png" srcset="img/background-three@2x.png 2x" width="1440" height="800"
                 alt="Магический Алтай!">
             </picture>
           </div>
           <div class="hero__container container">
-            <div class="hero__image">
-              <picture>
-                <source type="image/webp" media="(max-width: 1200px)"
-                  srcset="img/video-tablet.webp 1x, img/video-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/video.webp 1x, img/video@2x.webp 2x">
-                <source media="(max-width: 1200px)" srcset="img/video-tablet.png 1x, img/video-tablet@2x.png 2x">
-                <img src="img/video.png" srcset="img/video@2x.png 2x" width="482" height="317"
-                  alt="Самые красивые места!">
-              </picture>
-            </div>
-            <header class="hero__header">
+            <div class="hero__header">
               <h2 class="hero__title" data-price="Магические пейзажи Алтайского Края">Магические пейзажи Алтайского
                 Края
               </h2>
@@ -256,10 +237,15 @@
                   </svg>
                 </span>
               </div>
+            </div>
+            <div class="hero__music">
+              <iframe style="border:none;width:385px;height:215px;" width="385" height="215"
+                src="https://music.yandex.ru/iframe/track/119107082/25474374"></iframe>
+            </div>
           </div>
         </div>
       </div>
-      <div class="hero__bullets">
+      <div class="hero__bullets swiper-pagination">
         <!-- <button class="hero__bullet hero__bullet--active" type="button" aria-label="1 слайд."></button>
           <button class="hero__bullet" type="button" aria-label="2 слайд."></button>
           <button class="hero__bullet" type="button" aria-label="3 слайд."></button> -->
