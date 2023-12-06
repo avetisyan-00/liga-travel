@@ -57,12 +57,17 @@
       position: absolute;
       width: 100%;
       left: 0;
-      top: 82px;
+      top: 81px;
       padding-top: 30px;
       padding-left: 45px;
       padding-right: 45px;
       padding-bottom: 45px;
       background-color: #ffffff;
+    }
+
+    .header--nojs & {
+      display: block;
+      padding-top: 50px;
     }
   }
 
@@ -72,6 +77,11 @@
       padding-left: 15px;
       padding-right: 15px;
       padding-bottom: 28px;
+    }
+
+    .header--nojs & {
+      padding-top: 0;
+      align-self: flex-start;
     }
   }
 }
@@ -88,6 +98,10 @@
     letter-spacing: 0.64px;
     text-transform: uppercase;
     font-weight: 700;
+
+    .header--nojs & {
+      color: #ffffff;
+    }
   }
 }
 
@@ -207,6 +221,10 @@
           transform: rotate(-45deg);
         }
       }
+    }
+
+    .header--nojs & {
+      display: none;
     }
   }
 

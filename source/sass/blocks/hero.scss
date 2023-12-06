@@ -1,30 +1,40 @@
 .hero {
-  font-family: $ff-montserrat;
   position: relative;
 }
 
-.hero__wrapper {
-  position: absolute;
-  top: 74px;
-}
-
-.hero__header {
-  text-align: left;
-}
-
-.hero__picture {
-  background: linear-gradient(112deg, rgba(15, 20, 41, 0.33) 17.23%, rgba(15, 20, 41, 0) 94.93%), url(<path-to-image>), lightgray 50% / cover no-repeat;
+.hero__container {
+  position: relative;
+  z-index: 2;
 }
 
 .hero__slide {
-  text-align: center;
-  display: none;
-  padding-top: 20px;
-  padding-bottom: 43px;
+  position: relative;
+  // display: none;
+  padding-top: 200px;
+  padding-bottom: 80px;
+  background-color: #6489af;
+}
+
+.hero__background {
+  img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    object-fit: cover;
+    max-width: none;
+  }
 }
 
 .hero__slide--active {
   display: block;
+}
+
+.hero__header {
+  min-height: 520px;
+  display: flex;
+  flex-direction: column;
 }
 
 .hero__title {
@@ -34,7 +44,8 @@
   color: #ffffff;
   margin: 0;
   margin-bottom: 25px;
-  margin-top: 74px;
+  position: relative;
+  z-index: 3;
 }
 
 .hero__description {
@@ -48,33 +59,12 @@
 }
 
 .hero__button {
-  font-family: $ff-montserrat;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 16px;
-  color: #ffffff;
-  text-align: center;
-  padding: 20px;
-  background-color: #0266c1;
-  border: none;
-  margin-bottom: 148px;
+  width: 180px;
+}
 
-  &:hover,
-  &:focus-visible {
-    border: 1px solid #1C3374;
-    background:  #ffffff;
-    color: #1c3374;
-  }
-
-  &:active {
-    color: #ffffff;
-    background: #1C3374;
-  }
-
-  &:disabled {
-    color: #ffffff;
-    background: #999999;
-  }
+.hero__footer {
+  display: flex;
+  margin-top: auto;
 }
 
 .hero__days {
@@ -87,26 +77,14 @@
   color: #ffffff;
   background: transparent;
   border: 1px solid rgba(255, 255, 255, 0.50);
+  display: inline-block;
+  padding-left: 40px;
 
   svg {
     position: absolute;
-    top: 10px;
-    left: 10px;
-  }
-}
-
-.hero__hard {
-  position: relative;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 16px;
-  padding: 14px 20px;
-  color: #ffffff;
-  background: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.50);
-
-  svg {
-    position: absolute;
+    top: 11px;
+    left: 20px;
+    color: #ffffff;
   }
 }
 
@@ -124,10 +102,15 @@
 
 .hero__video {
   position: absolute;
-  bottom: 0;
-  right: 120px;
+  bottom: 73px;
+  right: 49px;
   width: 482px;
   height: 317px;
+}
+
+.hero__video-iframe {
+  width: 100%;
+  height: 100%;
 }
 
 // .hero__video-picture {
@@ -147,7 +130,7 @@
 .hero__video-play {
   position: absolute;
   padding: 0;
-  border: 2px solid #ffffff;
+  border: 1px solid #ffffff;
   border-radius: 50%;
   background: transparent;
   top: 50%;
@@ -155,67 +138,54 @@
   transform: translate(-50%, -50%);
   cursor: pointer;
   z-index: 2;
-  width: 100px;
-  height: 100px;
+  width: 56px;
+  height: 56px;
 
-  &::before {
-    position: absolute;
-    content: "";
-    width: 72px;
-    height: 72px;
-    border-radius: 50%;
-    background: transparent;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+  // &::before {
+  //   position: absolute;
+  //   content: "";
+  //   width: 56px;
+  //   height: 56px;
+  //   border-radius: 50%;
+  //   background: transparent;
+  //   top: 50%;
+  //   left: 50%;
+  //   transform: translate(-50%, -50%);
+  // }
 
   svg {
     position: absolute;
     color: #ffffff;
     top: 50%;
     left: 50%;
-    transform: translate(-4px, -8px);
+    transform: translate(-3px, -12px);
     z-index: 3;
   }
 
   &:hover,
   &:focus-visible {
     outline: none;
-    border-color: #102654;
-
-    &::before {
-      background: #ffffff;
-    }
+    border-color: #1c3374;
 
     svg {
-      color: #102654;
+      stroke: #000000;
     }
   }
 
   &:active {
     border-color: #1c3374;
-
-    &::before {
-      transform: translate(-50%, -50%) scale(0.83);
-      background: #ffffff;
-    }
+    background-color: #1c3374;
 
     svg {
-      color: #102654;
+      stroke: none;
     }
   }
 
   &:disabled {
-    opacity: 0.4;
-    border-color: #102654;
-
-    &::before {
-      background: #ffffff;
-    }
+    border-color: rgba(2, 102, 193, 0.1);
 
     svg {
-      color: #102654;
+      color: #0266c1;
     }
   }
 }

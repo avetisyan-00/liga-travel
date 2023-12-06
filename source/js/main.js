@@ -1,7 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
-import {menu} from './menu';
+import {menuToggle} from './modules/menu';
 import {findVideos} from './/video';
 
 // ---------------------------------
@@ -12,8 +12,8 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
-  menu();
   findVideos();
+  menuToggle();
   // Modules
   // ---------------------------------
 
