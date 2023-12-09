@@ -15,7 +15,8 @@
   height: auto;
 
   @include vp-1199 {
-    padding-bottom: 100px;
+    padding-top: 211px;
+    padding-bottom: 121px;
   }
 }
 
@@ -49,7 +50,7 @@
   }
 }
 
-.hero__title {
+.hero__header h2 {
   font-size: 77px;
   font-weight: 800;
   line-height: 77px;
@@ -63,6 +64,7 @@
     font-size: 56px;
     line-height: 56px;
     max-width: 678px;
+    margin-bottom: 13px;
   }
 
   @include vp-767 {
@@ -72,7 +74,7 @@
   }
 }
 
-.hero__description {
+.hero__header p {
   font-size: 17px;
   font-weight: 400;
   line-height: 24px;
@@ -80,6 +82,11 @@
   margin: 0;
   margin-bottom: 35px;
   width: 420px;
+
+  @include vp-1199 {
+    width: 475px;
+    margin-bottom: 27px;
+  }
 
   @include vp-767 {
     font-size: 15px;
@@ -106,13 +113,15 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
-  padding: 14px 20px;
+  padding-top: 13px;
+  padding-left: 40px;
+  padding-right: 19px;
+  padding-bottom: 14px;
   margin-right: 10px;
   color: #ffffff;
   background: transparent;
   border: 1px solid rgba(255, 255, 255, 0.50);
   display: inline-block;
-  padding-left: 40px;
 
   svg {
     position: absolute;
@@ -126,15 +135,15 @@
   position: absolute;
 
   &.swiper-pagination-bullets.swiper-pagination-horizontal {
-    bottom: 97px;
-    right: 101px;
+    bottom: 91px;
+    right: 110px;
     left: auto;
     width: auto;
 
     @include vp-1199 {
       width: 100%;
       right: 0;
-      bottom: 40px;
+      bottom: 34px;
     }
   }
 
@@ -166,8 +175,8 @@
 
 .hero__video {
   position: absolute;
-  bottom: 73px;
-  right: 49px;
+  bottom: 74px;
+  right: 45px;
   width: 482px;
   height: 317px;
 

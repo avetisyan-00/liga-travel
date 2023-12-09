@@ -4,6 +4,7 @@ import {Form} from './modules/form-validate/form';
 import {menuToggle} from './modules/menu';
 import {findVideos} from './/video';
 import {initSliderHero} from './modules/slide-hero';
+import {initSliderTours} from './modules/slide-tours';
 
 // ---------------------------------
 
@@ -16,6 +17,7 @@ window.addEventListener('DOMContentLoaded', () => {
   findVideos();
   menuToggle();
   initSliderHero();
+  initSliderTours();
   // Modules
   // ---------------------------------
 

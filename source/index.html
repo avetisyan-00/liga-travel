@@ -37,7 +37,7 @@
           <div class="header__nav-wrapper">
             <ul class="header__list">
               <li class="header__item">
-                <a class="header__link" href="#">
+                <a class="header__link" href="#tours">
                   Туры
                 </a>
               </li>
@@ -75,6 +75,7 @@
   </header>
 
   <main>
+    <h1 class="visually-hidden">Организация походов в горы.</h1>
     <section class="hero swiper">
       <div class="hero__wrapper swiper-wrapper">
         <div class="hero__slide hero__slide--active swiper-slide">
@@ -94,8 +95,8 @@
           </div>
           <div class="hero__container container">
             <div class="hero__header">
-              <h2 class="hero__title">Захватывающие вершины&nbsp;Кавказа</h2>
-              <p class="hero__description">
+              <h2>Захватывающие вершины&nbsp;Кавказа</h2>
+              <p>
                 В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на вершину
                 горы
                 Чегет.
@@ -161,9 +162,9 @@
           </div>
           <div class="hero__container container">
             <div class="hero__header">
-              <h2 class="hero__title">Невероятная
+              <h2>Невероятная
                 природа&nbsp;Камчатки</h2>
-              <p class="hero__description">
+              <p>
                 Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых
                 уголков
                 дикой природы в мире.
@@ -217,10 +218,10 @@
           </div>
           <div class="hero__container container">
             <div class="hero__header">
-              <h2 class="hero__title" data-price="Магические пейзажи Алтайского Края">Магические пейзажи Алтайского
+              <h2 data-price="Магические пейзажи Алтайского Края">Магические пейзажи Алтайского
                 Края
               </h2>
-              <p class="hero__description">
+              <p>
                 Алтайский трекинг-тур — это захватывающее приключение с посещением магических и захватывающих
                 дух ландшафтов
                 Алтайских гор.
@@ -251,104 +252,330 @@
         </div>
       </div>
       <div class="hero__bullets swiper-pagination">
-        <!-- <button class="hero__bullet hero__bullet--active" type="button" aria-label="1 слайд."></button>
-          <button class="hero__bullet" type="button" aria-label="2 слайд."></button>
-          <button class="hero__bullet" type="button" aria-label="3 слайд."></button> -->
       </div>
     </section>
 
-    <section class="tours">
+    <section class="tours" id="tours">
       <div class="tours__container container">
-        <div class="tours__slogan">Ближайшие туры</div>
-        <div class="tours__navigation">
-          <div class="tours__arrows">
-            <button class="tours__arrow tours__arrow--left slider-button-prev" type="button" aria-label="назад.">
-              <svg width="13" height="0" viewBox="0 0 13 0" fill="none" xmlns="http://www.w3.org/2000/svg"
-                stroke="#102654">
-                <use xlink:href="img/sprite.svg#left"></use>
-              </svg>
-            </button>
-            <button class="tours__arrow tours__arrow--right slider-button-next" type="button" aria-label="вперед.">
-              <svg width="13" height="0" viewBox="0 0 13 0" fill="none" xmlns="http://www.w3.org/2000/svg"
-                stroke="#102654">
-                <use xlink:href="img/sprite.svg#right"></use>
-              </svg>
-            </button>
+        <div class="tours__slider swiper">
+          <h2 class="tours__slogan title" data-slogan="Ближайшие туры">Ближайшие туры</h2>
+          <div class="tours__navigation">
+            <div class="arrows-slider tours__arrows">
+              <button class="arrows-slider__btn arrows-slider__btn--left" id="tours-slider-prev" type="button"
+                aria-label="назад.">
+                <svg width="14" height="9" viewBox="0 0 14 9" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                  stroke="currentColor">
+                  <use xlink:href="img/sprite.svg#left"></use>
+                </svg>
+              </button>
+              <button class="arrows-slider__btn arrows-slider__btn--right" id="tours-slider-next" type="button"
+                aria-label="вперед.">
+                <svg width="14" height="9" viewBox="0 0 14 9" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                  stroke="currentColor">
+                  <use xlink:href="img/sprite.svg#right"></use>
+                </svg>
+              </button>
+            </div>
           </div>
-        </div>
 
-        <div class="tours__cards">
-          <div class="tours__picture">
-            <picture>
-              <source type="image/webp" media="(max-width: 767px)"
-                srcset="img/tours-one-mobile.webp 1x, img/tours-one-mobile@2x.webp 2x">
-              <source type="image/webp" media="(max-width: 1199px)"
-                srcset="img/tours-one-tablet.webp 1x, img/tours-one-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/tours-one.webp 1x, img/tours-one@2x.webp 2x">
-              <source media="(max-width: 767px)" srcset="img/tours-one-mobile.png 1x, img/tours-one-mobile@2x.png 2x">
-              <source media="(max-width: 1199px)" srcset="img/tours-one-tablet.png 1x, img/tours-one-tablet@2x.png 2x">
-              <img src="img/tours-one.png" srcset="img/tours-one@2x.png 2x" width="380" height="416"
-                alt="Магический Кавказ!">
-            </picture>
-          </div>
-          <div class="tours__miniblock">
-            <span class="tours__days">Кавказ
-              <svg svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor">
-                <use xlink:href="img/sprite.svg#geo"></use>
-              </svg>
-            </span>
-            <span class="tours__days">
-              4 дня
-              <svg svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor">
-                <use xlink:href="img/sprite.svg#sun"></use>
-              </svg>
-            </span>
-            <span class="tours__days">
-              3 ночи
-              <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-                <use xlink:href="img/sprite.svg#moon"></use>
-              </svg>
-            </span>
-          </div>
-          <h2 class="tours__title">Путешествие
-            вокруг Эльбруса</h2>
-          <div class="tours__block">
-            <span class="tours__hard">Сложность
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
-                stroke="#102654">
-                <use xlink:href="img/sprite.svg#star"></use>
-              </svg>
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
-                stroke="#102654">
-                <use xlink:href="img/sprite.svg#star"></use>
-              </svg>
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
-                stroke="#102654">
-                <use xlink:href="img/sprite.svg#star"></use>
-              </svg>
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
-                stroke="#102654">
-                <use xlink:href="img/sprite.svg#star"></use>
-              </svg>
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
-                stroke="#102654">
-                <use xlink:href="img/sprite.svg#star"></use>
-              </svg>
-            </span>
-            <span class="tours__hard">Даты набора</span>
-            <span class="tours__nub">12.06–19.06</span>
-            <span class="tours__hard">Группа</span>
-            <span class="tours__nub">до 15 чел.</span>
+          <div class="tours__cards swiper-wrapper">
+            <div class="tours__card swiper-slide">
+              <div class="tours__picture">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="img/tours-one-mobile.webp 1x, img/tours-one-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1199px)"
+                    srcset="img/tours-one-tablet.webp 1x, img/tours-one-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/tours-one.webp 1x, img/tours-one@2x.webp 2x">
+                  <source media="(max-width: 767px)"
+                    srcset="img/tours-one-mobile.png 1x, img/tours-one-mobile@2x.png 2x">
+                  <source media="(max-width: 1199px)"
+                    srcset="img/tours-one-tablet.png 1x, img/tours-one-tablet@2x.png 2x">
+                  <img src="img/tours-one.png" srcset="img/tours-one@2x.png 2x" width="380" height="416"
+                    alt="Магический Кавказ!">
+                </picture>
+              </div>
+              <div class="tours__miniblock">
+                <span class="tours__place">
+                  Кавказ
+                  <svg svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor">
+                    <use xlink:href="img/sprite.svg#geo"></use>
+                  </svg>
+                </span>
+                <span class="tours__days">
+                  4 дня
+                  <svg svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor">
+                    <use xlink:href="img/sprite.svg#sun"></use>
+                  </svg>
+                </span>
+                <span class="tours__days">
+                  3 ночи
+                  <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor">
+                    <use xlink:href="img/sprite.svg#moon"></use>
+                  </svg>
+                </span>
+              </div>
+              <h3 class="tours__title">Путешествие
+                вокруг Эльбруса</h3>
+              <div class="tours__block">
+                <div class="tours__wrap">
+                  <span class="tours__hard">Сложность</span>
+                  <span class="tours__nub">
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="img/sprite.svg#star-full"></use>
+                    </svg>
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="img/sprite.svg#star-full"></use>
+                    </svg>
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="img/sprite.svg#star-full"></use>
+                    </svg>
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="img/sprite.svg#star-full"></use>
+                    </svg>
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </span>
+                </div>
+                <div class="tours__wrap">
+                  <span class="tours__hard">Даты набора</span>
+                  <span class="tours__nub">12.06–19.06</span>
+                </div>
+                <div class="tours__wrap">
+                  <span class="tours__hard">Группа</span>
+                  <span class="tours__nub">до 15 чел.</span>
+                </div>
+              </div>
+            </div>
+            <div class="tours__card swiper-slide">
+              <div class="tours__picture">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="img/tours-two-mobile.webp 1x, img/tours-two-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1199px)"
+                    srcset="img/tours-two-tablet.webp 1x, img/tours-two-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/tours-two.webp 1x, img/tours-two@2x.webp 2x">
+                  <source media="(max-width: 767px)"
+                    srcset="img/tours-two-mobile.png 1x, img/tours-two-mobile@2x.png 2x">
+                  <source media="(max-width: 1199px)"
+                    srcset="img/tours-two-tablet.png 1x, img/tours-two-tablet@2x.png 2x">
+                  <img src="img/tours-two.png" srcset="img/tours-two@2x.png 2x" width="380" height="416"
+                    alt="Магический Кавказ!">
+                </picture>
+              </div>
+              <div class="tours__miniblock">
+                <span class="tours__place">
+                  Алтай
+                  <svg svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor">
+                    <use xlink:href="img/sprite.svg#geo"></use>
+                  </svg>
+                </span>
+                <span class="tours__days">
+                  14 дней
+                  <svg svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor">
+                    <use xlink:href="img/sprite.svg#sun"></use>
+                  </svg>
+                </span>
+                <span class="tours__days">
+                  13 ночей
+                  <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor">
+                    <use xlink:href="img/sprite.svg#moon"></use>
+                  </svg>
+                </span>
+              </div>
+              <h3 class="tours__title">Путь к подножию
+                Белухи</h3>
+              <div class="tours__block">
+                <div class="tours__wrap">
+                  <span class="tours__hard">Сложность</span>
+                  <span class="tours__nub">
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="img/sprite.svg#star-full"></use>
+                    </svg>
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="img/sprite.svg#star-full"></use>
+                    </svg>
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="img/sprite.svg#star-full"></use>
+                    </svg>
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </span>
+                </div>
+                <div class="tours__wrap">
+                  <span class="tours__hard">Даты набора</span>
+                  <span class="tours__nub">14.06–23.06</span>
+                </div>
+                <div class="tours__wrap">
+                  <span class="tours__hard">Группа</span>
+                  <span class="tours__nub">до 25 чел.</span>
+                </div>
+              </div>
+            </div>
+            <div class="tours__card swiper-slide">
+              <div class="tours__picture">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="img/tours-three-mobile.webp 1x, img/tours-three-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1199px)"
+                    srcset="img/tours-three-tablet.webp 1x, img/tours-three-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/tours-three.webp 1x, img/tours-three@2x.webp 2x">
+                  <source media="(max-width: 767px)"
+                    srcset="img/tours-three-mobile.png 1x, img/tours-three-mobile@2x.png 2x">
+                  <source media="(max-width: 1199px)"
+                    srcset="img/tours-three-tablet.png 1x, img/tours-three-tablet@2x.png 2x">
+                  <img src="img/tours-three.png" srcset="img/tours-three@2x.png 2x" width="380" height="416"
+                    alt="Магический Кавказ!">
+                </picture>
+              </div>
+              <div class="tours__miniblock">
+                <span class="tours__place">
+                  Адыгея
+                  <svg svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor">
+                    <use xlink:href="img/sprite.svg#geo"></use>
+                  </svg>
+                </span>
+                <span class="tours__days">
+                  7 дней
+                  <svg svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor">
+                    <use xlink:href="img/sprite.svg#sun"></use>
+                  </svg>
+                </span>
+                <span class="tours__days">
+                  6 ночей
+                  <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor">
+                    <use xlink:href="img/sprite.svg#moon"></use>
+                  </svg>
+                </span>
+              </div>
+              <h3 class="tours__title">Через Фишт
+                к Чёрному морю и обратно</h3>
+              <div class="tours__block">
+                <div class="tours__wrap">
+                  <span class="tours__hard">Сложность</span>
+                  <span class="tours__nub">
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="img/sprite.svg#star-full"></use>
+                    </svg>
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="img/sprite.svg#star-full"></use>
+                    </svg>
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="img/sprite.svg#star-full"></use>
+                    </svg>
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="img/sprite.svg#star-full"></use>
+                    </svg>
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </span>
+                </div>
+                <div class="tours__wrap">
+                  <span class="tours__hard">Даты набора</span>
+                  <span class="tours__nub">15.07–19.06</span>
+                </div>
+                <div class="tours__wrap">
+                  <span class="tours__hard">Группа</span>
+                  <span class="tours__nub">до 22 чел.</span>
+                </div>
+              </div>
+            </div>
+            <div class="tours__card swiper-slide">
+              <div class="tours__picture">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="img/tours-one-mobile.webp 1x, img/tours-one-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1199px)"
+                    srcset="img/tours-one-tablet.webp 1x, img/tours-one-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/tours-one.webp 1x, img/tours-one@2x.webp 2x">
+                  <source media="(max-width: 767px)"
+                    srcset="img/tours-one-mobile.png 1x, img/tours-one-mobile@2x.png 2x">
+                  <source media="(max-width: 1199px)"
+                    srcset="img/tours-one-tablet.png 1x, img/tours-one-tablet@2x.png 2x">
+                  <img src="img/tours-one.png" srcset="img/tours-one@2x.png 2x" width="380" height="416"
+                    alt="Магический Кавказ!">
+                </picture>
+              </div>
+              <div class="tours__miniblock">
+                <span class="tours__place">
+                  Кавказ
+                  <svg svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor">
+                    <use xlink:href="img/sprite.svg#geo"></use>
+                  </svg>
+                </span>
+                <span class="tours__days">
+                  4 дня
+                  <svg svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor">
+                    <use xlink:href="img/sprite.svg#sun"></use>
+                  </svg>
+                </span>
+                <span class="tours__days">
+                  3 ночи
+                  <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor">
+                    <use xlink:href="img/sprite.svg#moon"></use>
+                  </svg>
+                </span>
+              </div>
+              <h3 class="tours__title">Путешествие
+                вокруг Эльбруса</h3>
+              <div class="tours__block">
+                <div class="tours__wrap">
+                  <span class="tours__hard">Сложность</span>
+                  <span class="tours__nub">
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="img/sprite.svg#star-full"></use>
+                    </svg>
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="img/sprite.svg#star-full"></use>
+                    </svg>
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="img/sprite.svg#star-full"></use>
+                    </svg>
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="img/sprite.svg#star-full"></use>
+                    </svg>
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </span>
+                </div>
+                <div class="tours__wrap">
+                  <span class="tours__hard">Даты набора</span>
+                  <span class="tours__nub">12.06–19.06</span>
+                </div>
+                <div class="tours__wrap">
+                  <span class="tours__hard">Группа</span>
+                  <span class="tours__nub">до 15 чел.</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <a class="tours__text">Показать все туры
-          <svg width="12" height="22" viewBox="0 0 12 22" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
-            stroke="#102654">
-            <use xlink:href="img/sprite.svg#arrow"></use>
-          </svg>
-        </a>
+        <div class="tours__link-wrapper">
+          <a class="tours__link">Показать все туры
+            <svg width="9" height="14" viewBox="0 0 9 14" xmlns="http://www.w3.org/2000/svg" stroke="currentColor">
+              <use xlink:href="img/sprite.svg#arrow"></use>
+            </svg>
+          </a>
+        </div>
       </div>
     </section>
   </main>
