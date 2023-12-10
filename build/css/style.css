@@ -2207,6 +2207,13 @@ button,
   }
 }
 
+.text {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 21px;
+  color: #2d383f;
+}
+
 .tours {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -2409,6 +2416,81 @@ button,
 .tours__arrows {
   top: 20px;
   right: 0;
+}
+
+.train {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.train__text {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 21px;
+  color: #2d383f;
+  margin: 0;
+  margin-top: 56px;
+  margin-bottom: 54px;
+}
+
+.train__miniblock p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #2d383f;
+}
+
+.train__block {
+  border: 1px solid rgba(2, 102, 193, 0.1);
+  background: #ffffff;
+  width: 285px;
+  height: 356px;
+  padding: 15px;
+}
+
+.train__title {
+  position: relative;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  color: #2d383f;
+  margin: 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.train__title svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 24px;
+  height: 24px;
+}
+
+.train__description {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #2d383f;
+  margin: 0;
+}
+
+.train__general {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.train__general p {
+  position: relative;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #2d383f;
+  margin: 0;
+  padding-left: 45px;
+}
+.train__general p svg {
+  position: absolute;
+  left: 10px;
 }
 
 .arrows-slider {

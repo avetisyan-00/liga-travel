@@ -5,6 +5,7 @@ import {menuToggle} from './modules/menu';
 import {findVideos} from './/video';
 import {initSliderHero} from './modules/slide-hero';
 import {initSliderTours} from './modules/slide-tours';
+import {initSliderTrain} from './modules/slide-train';
 
 // ---------------------------------
 
@@ -18,6 +19,7 @@ window.addEventListener('DOMContentLoaded', () => {
   menuToggle();
   initSliderHero();
   initSliderTours();
+  initSliderTrain();
   // Modules
   // ---------------------------------
 
