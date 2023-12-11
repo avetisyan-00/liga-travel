@@ -1,12 +1,12 @@
-const sliderTrain = document.querySelector('.train__slider');
+const sliderTrain = document.querySelector('.train__instructor');
 
 const initSliderTrain = () => {
   if (sliderTrain) {
     // eslint-disable-next-line
     new Swiper(sliderTrain, {
       navigation: {
-        nextEl: '#tours-slider-next',
-        prevEl: '#tours-slider-prev',
+        nextEl: '#train-slider-next',
+        prevEl: '#train-slider-prev',
       },
 
       breakpoints: {
