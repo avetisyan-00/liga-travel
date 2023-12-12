@@ -183,10 +183,6 @@
   @include vp-767 {
     display: block;
 
-    &::before {
-
-    }
-
     p:nth-child(n) {
       font-size: 12px;
       line-height: 18px;

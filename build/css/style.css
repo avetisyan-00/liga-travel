@@ -1792,6 +1792,157 @@ button,
   color: #0266c1;
 }
 
+.advantages {
+  text-align: center;
+  padding-top: 42px;
+  padding-bottom: 80px;
+}
+
+.advantages__slogan {
+  text-align: center;
+}
+
+.advantages__slide {
+  width: 380px;
+  padding: 40px 20px;
+  border: 1px solid rgba(2, 102, 193, 0.1);
+  background: #ffffff;
+}
+
+.advantages__icon {
+  width: 54px;
+  height: 54px;
+  border: 1px solid #0266c1;
+  position: relative;
+}
+.advantages__icon svg {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.advantages__header h3 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+  color: #2d383f;
+  margin: 0;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+.advantages__header p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #2d383f;
+  margin: 0;
+}
+
+.advantages__arrows {
+  bottom: 20px;
+  left: 50%;
+}
+
+.review {
+  padding-top: 30px;
+  padding-bottom: 42px;
+}
+
+.review__arrows {
+  right: 0;
+}
+
+.review__slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 790px;
+  padding: 20px 40px 20px 20px;
+  border: 0 solid #ffffff;
+  background: #ffffff;
+  -webkit-box-shadow: 0 0 20px 0 rgba(28, 51, 116, 0.1);
+          box-shadow: 0 0 20px 0 rgba(28, 51, 116, 0.1);
+}
+
+.review__header {
+  width: 353px;
+  margin-left: auto;
+}
+.review__header h3 {
+  color: #2d383f;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 13px;
+  margin: 0;
+  margin-bottom: 8px;
+}
+.review__header p {
+  color: #2d383f;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.review__footer p {
+  color: #2d383f;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 100%;
+  margin: 0;
+}
+
+.about {
+  padding-top: 56px;
+  padding-bottom: 30px;
+}
+
+.about__header {
+  position: relative;
+}
+
+.about__slogan {
+  margin-bottom: 57px;
+}
+
+.about__block {
+  position: absolute;
+  top: 0;
+  right: 120px;
+  width: 585px;
+  height: 395px;
+}
+.about__block h3 {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 21px;
+  color: #2d383f;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.about__block h4 {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 21px;
+  color: #2d383f;
+  margin: 0;
+}
+.about__block p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #2d383f;
+  width: 585px;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
 .header {
   position: absolute;
   top: 0;

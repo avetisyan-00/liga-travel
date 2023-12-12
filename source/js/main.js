@@ -6,6 +6,8 @@ import {findVideos} from './/video';
 import {initSliderHero} from './modules/slide-hero';
 import {initSliderTours} from './modules/slide-tours';
 import {initSliderTrain} from './modules/slide-train';
+import {initSliderReview} from './modules/slide-review';
+import {initSliderAdvantages} from './modules/slide-advantages';
 
 // ---------------------------------
 
@@ -20,6 +22,8 @@ window.addEventListener('DOMContentLoaded', () => {
   initSliderHero();
   initSliderTours();
   initSliderTrain();
+  initSliderReview();
+  initSliderAdvantages();
   // Modules
   // ---------------------------------
 

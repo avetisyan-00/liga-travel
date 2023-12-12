@@ -1,0 +1,48 @@
+.about {
+  padding-top: 56px;
+  padding-bottom: 30px;
+}
+
+.about__header {
+ position: relative;
+}
+
+.about__slogan {
+  margin-bottom: 57px;
+}
+
+.about__block {
+  position: absolute;
+  top: 0;
+  right: 120px;
+  width: 585px;
+  height: 395px;
+
+
+  h3 {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 21px;
+    color: #2d383f;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  h4 {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 21px;
+    color: #2d383f;
+    margin: 0;
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #2d383f;
+    width: 585px;
+    margin: 0;
+    margin-bottom: 25px;
+  }
+}

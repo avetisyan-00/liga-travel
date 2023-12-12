@@ -1,0 +1,50 @@
+.review {
+  padding-top: 30px;
+  padding-bottom: 42px;
+}
+
+.review__arrows {
+  right: 0;
+}
+
+.review__slide {
+  display: flex;
+  width: 790px;
+  padding: 20px 40px 20px 20px;
+  border: 0 solid #ffffff;
+  background: #ffffff;
+  box-shadow: 0 0 20px 0 rgba(28, 51, 116, 0.1);
+}
+
+.review__header {
+  width: 353px;
+  margin-left: auto;
+
+  h3 {
+    color: #2d383f;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 13px;
+    margin: 0;
+    margin-bottom: 8px;
+  }
+
+  p {
+    color: #2d383f;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    margin: 0;
+    margin-bottom: 12px;
+  }
+}
+
+.review__footer {
+   p {
+    color: #2d383f;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 100%;
+    margin: 0;
+   }
+}
