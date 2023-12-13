@@ -4,6 +4,7 @@ const initSliderReview = () => {
   if (sliderReview) {
     // eslint-disable-next-line
     new Swiper(sliderReview, {
+      loop: true,
       navigation: {
         nextEl: '#review-slider-next',
         prevEl: '#review-slider-prev',
@@ -11,12 +12,12 @@ const initSliderReview = () => {
 
       breakpoints: {
         1200: {
-          slidesPerView: 1.5,
+          slidesPerView: 'auto',
           spaceBetween: 120,
         },
 
         768: {
-          slidesPerView: 1.5,
+          slidesPerView: 'auto',
           spaceBetween: 30,
         },
 

@@ -17,8 +17,28 @@
     color: #2d383f;
   }
 
+  &--center {
+    text-align: center;
+    &::before {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
   @include vp-767 {
     font-size: 22px;
     line-height: 22px;
+
+    &::before {
+      font-size: 26px;
+      line-height: 26px;
+    }
+
+    &--big {
+      &::before {
+        font-size: 55px;
+        line-height: 55px;
+      }
+    }
   }
 }

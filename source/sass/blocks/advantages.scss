@@ -1,15 +1,14 @@
 .advantages {
+  position: relative;
   text-align: center;
   padding-top: 42px;
   padding-bottom: 80px;
-}
-
-.advantages__slogan {
-  text-align: center;
+  margin-bottom: 80px;
 }
 
 .advantages__slide {
   width: 380px;
+  height: auto;
   padding: 40px 20px;
   border: 1px solid rgba(2, 102, 193, 0.1);
   background: #ffffff;
@@ -18,8 +17,11 @@
 .advantages__icon {
   width: 54px;
   height: 54px;
+  color: #0266c1;
   border: 1px solid #0266c1;
   position: relative;
+  margin-left: auto;
+  margin-right: auto;
 
   svg {
     position: absolute;
@@ -54,4 +56,5 @@
 .advantages__arrows {
   bottom: 20px;
   left: 50%;
+  transform: translateX(-50%);
 }

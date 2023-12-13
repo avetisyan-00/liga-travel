@@ -3,28 +3,23 @@ const sliderAdvantages = document.querySelector('.advantages__blocks');
 const initSliderAdvantages = () => {
   if (sliderAdvantages) {
     // eslint-disable-next-line
-    new Swiper(sliderAdvantages, {
+    const swiper = new Swiper(sliderAdvantages, {
+      loop: true,
+      slidesPerView: 'auto',
+      spaceBetween: 30,
+      centeredSlides: true,
       navigation: {
         nextEl: '#advantages-slider-next',
         prevEl: '#advantages-slider-prev',
       },
+    });
 
-      breakpoints: {
-        1200: {
-          slidesPerView: 4,
-          spaceBetween: 30,
-        },
-
-        768: {
-          slidesPerView: 5,
-          spaceBetween: 30,
-        },
-
-        320: {
-          slidesPerView: 5,
-          spaceBetween: 20,
-        },
-      },
+    window.addEventListener('resize', function () {
+      if (window.innerWidth >= 1200) {
+        swiper.init();
+      } else {
+        swiper.destroy();
+      }
     });
   }
 };
