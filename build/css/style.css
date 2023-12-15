@@ -2081,6 +2081,102 @@ button,
   margin-bottom: 25px;
 }
 
+.form {
+  position: relative;
+}
+
+.form__container {
+  position: absolute;
+  top: 0;
+}
+.form__container h2 {
+  color: #ffffff;
+}
+.form__container p {
+  color: #ffffff;
+}
+
+.form__field-group input {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #2d383f;
+  width: 360px;
+  height: 56px;
+  background-color: #ffffff;
+  border: none;
+}
+.form__field-group input::-webkit-input-placeholder {
+  color: #ffffff;
+  opacity: 0.5;
+}
+.form__field-group input::-moz-placeholder {
+  color: #ffffff;
+  opacity: 0.5;
+}
+.form__field-group input:-ms-input-placeholder {
+  color: #ffffff;
+  opacity: 0.5;
+}
+.form__field-group input::-ms-input-placeholder {
+  color: #ffffff;
+  opacity: 0.5;
+}
+.form__field-group input::placeholder {
+  color: #ffffff;
+  opacity: 0.5;
+}
+.form__field-group input:hover {
+  border-bottom-color: #ffffff;
+}
+.form__field-group input:active, .form__field-group input:focus {
+  outline: none;
+  border-color: #ffffff;
+}
+.form__field-group input:disabled {
+  border-bottom-color: #ffffff;
+  opacity: 0.4;
+}
+.form__field-group input--invalid {
+  border-bottom-color: #ff121f;
+}
+.form__field-group input--invalid + .form__error {
+  display: block;
+}
+
+.form__fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.form__field-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form__field-group {
+  position: relative;
+}
+
+.form__error {
+  display: none;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  position: absolute;
+  left: 0;
+  bottom: 8px;
+  color: #ff121f;
+}
+
 .header {
   position: absolute;
   top: 0;
@@ -2469,6 +2565,33 @@ button,
 .social__link:disabled, .social__link--disabled {
   background-color: rgba(255, 255, 255, 0.3);
   color: #030a1a;
+}
+
+.gallery__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.gallery__slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.gallery__contnet {
+  display: block;
+}
+
+.gallery__image {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.gallery__image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .title {
