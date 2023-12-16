@@ -1292,8 +1292,7 @@
                   <source type="image/webp" srcset="img/two.webp 1x, img/two@2x.webp 2x">
                   <source media="(max-width: 767px)" srcset="img/two-mobile.png 1x, img/two-mobile@2x.png 2x">
                   <source media="(max-width: 1199px)" srcset="img/two-tablet.png 1x, img/two-tablet@2x.png 2x">
-                  <img src="img/two.png" srcset="img/two@2x.png 2x" width="329" height="247"
-                    alt="Магический Кавказ!">
+                  <img src="img/two.png" srcset="img/two@2x.png 2x" width="329" height="247" alt="Магический Кавказ!">
                 </picture>
               </div>
               <div class="gallery__image">
@@ -1318,8 +1317,7 @@
                   srcset="img/four-tablet.webp 1x, img/four-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="img/four.webp 1x, img/four@2x.webp 2x">
                 <source media="(max-width: 1199px)" srcset="img/four-tablet.png 1x, img/four-tablet@2x.png 2x">
-                <img src="img/four.png" srcset="img/four@2x.png 2x" width="277" height="459"
-                  alt="Магический Кавказ!">
+                <img src="img/four.png" srcset="img/four@2x.png 2x" width="277" height="459" alt="Магический Кавказ!">
               </picture>
             </div>
           </div>
@@ -1358,8 +1356,7 @@
                   <source type="image/webp" srcset="img/two.webp 1x, img/two@2x.webp 2x">
                   <source media="(max-width: 767px)" srcset="img/two-mobile.png 1x, img/two-mobile@2x.png 2x">
                   <source media="(max-width: 1199px)" srcset="img/two-tablet.png 1x, img/two-tablet@2x.png 2x">
-                  <img src="img/two.png" srcset="img/two@2x.png 2x" width="329" height="247"
-                    alt="Магический Кавказ!">
+                  <img src="img/two.png" srcset="img/two@2x.png 2x" width="329" height="247" alt="Магический Кавказ!">
                 </picture>
               </div>
               <div class="gallery__image">
@@ -1377,19 +1374,13 @@
               </div>
             </div>
           </div>
-
-
-
-
         </div>
       </div>
-
-
       </div>
     </section>
 
 
-    <form action="form" action="https://echo.htmlacademy.ru" method="post">
+    <form class="form" action="https://echo.htmlacademy.ru" method="post">
       <div class="form__image">
         <picture>
           <source type="image/webp" media="(max-width: 767px)"
@@ -1403,19 +1394,19 @@
         </picture>
       </div>
       <div class="form__container container">
-        <h2>Остались вопросы?</h2>
-        <p>Заполните форму и наш оператор свяжется с вами для консультации.</p>
+        <div class="form__header">
+          <h2>Остались вопросы?</h2>
+          <p>Заполните форму и наш оператор свяжется с вами для консультации.</p>
+        </div>
         <fieldset class="form__fieldset">
           <div class="form__field-block">
             <div class="form__field-group">
               <label class="visually-hidden" for="telephone">Телефон</label>
               <input type="tel" id="telephone" name="telephone" placeholder="Телефон" required>
-              <span class="form__error">Текст ошибки</span>
             </div>
             <div class="form__field-group">
-              <label class="visually-hidden" for="Email">Email</label>
-              <input type="email" id="Email" name="Email" placeholder="Email" required>
-              <span class="form__error">Текст ошибки</span>
+              <label class="visually-hidden" for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Email" required>
             </div>
             <button class="form__button btn" type="submit">отправить</button>
           </div>
