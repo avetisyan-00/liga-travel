@@ -8,6 +8,7 @@ import {initSliderTours} from './modules/slide-tours';
 import {initSliderTrain} from './modules/slide-train';
 import {initSliderReview} from './modules/slide-review';
 import {initSliderAdvantages} from './modules/slide-advantages';
+import {initSliderGallery} from './modules/slide-gallery';
 
 // ---------------------------------
 
@@ -24,6 +25,7 @@ window.addEventListener('DOMContentLoaded', () => {
   initSliderTrain();
   initSliderReview();
   initSliderAdvantages();
+  initSliderGallery();
   // Modules
   // ---------------------------------
 
