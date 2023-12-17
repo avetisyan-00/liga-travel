@@ -2127,6 +2127,58 @@ button,
   margin-bottom: 25px;
 }
 
+.contacts__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.contacts__image {
+  position: absolute;
+  top: 98px;
+  right: 0;
+}
+
+.contacts__list {
+  list-style: none;
+}
+
+.contacts__slogan {
+  margin: 0;
+  margin-bottom: 26px;
+}
+
+.contacts__header p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  width: 500px;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.contacts__text {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+  color: #2d383f;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.contacts__description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #2d383f;
+  margin: 0;
+  margin-bottom: 35px;
+}
+
 .form {
   position: relative;
   background-color: #16180f;

@@ -1413,6 +1413,61 @@
         </fieldset>
       </div>
     </form>
+
+    <section class="contacts">
+      <div class="contacts__container container">
+        <div class="contacts__wrapper">
+          <div class="contacts__block">
+            <div class="contacts__header">
+              <h2 class="contacts__slogan title" data-slogan="Контакты">Контакты</h2>
+              <p>Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости. Мы будем рады поделиться
+                увлекательными историями и подобрать для вас тур.</p>
+            </div>
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <p class="contacts__text">Телефон:</p>
+                <a class="contacts__description" href="tel:+79837454545">+7 983 745-45-45
+                  <svg width="22" height="22" viewBox="0 0 22 22" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                    stroke="currentColor">
+                    <use xlink:href="img/sprite.svg#phone"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="contacts__item">
+                <p class="contacts__text">Email</p>
+                <a class="contacts__description" href="mailto:info@lifetour.com">info@lifetour.com
+                  <svg width="22" height="22" viewBox="0 0 22 22" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                    stroke="currentColor">
+                    <use xlink:href="img/sprite.svg#mail"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="contacts__item">
+                <p class="contacts__text">Адрес</p>
+                <p class="contacts__description">г. Москва, пр-т Мира, д. 14, офис 101
+                  <svg width="22" height="22" viewBox="0 0 22 22" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                    stroke="currentColor">
+                    <use xlink:href="img/sprite.svg#geo"></use>
+                  </svg>
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="contacts__image">
+            <picture>
+              <source type="image/webp" media="(max-width: 767px)"
+                srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1199px)"
+                srcset="img/map-tablet.webp 1x, img/fmap-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/map.webp 1x, img/map@2x.webp 2x">
+              <source media="(max-width: 767px)" srcset="img/map-mobile.png 1x, img/map-mobile@2x.png 2x">
+              <source media="(max-width: 1199px)" srcset="img/map-tablet.png 1x, img/map-tablet@2x.png 2x">
+              <img src="img/map.png" srcset="img/map@2x.png 2x" width="585" height="324" alt="Магический Кавказ!">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
 
@@ -1423,7 +1478,7 @@
 
 
 
-  <!-- <footer class="footer">
+  <footer class="footer">
     <div class="footer__container container">
       <div class="footer__wrapper">
         <a class="footer__logo logo"><img class="logo" alt="Логотип Путешествия" src="img/svg/logotype-footer.svg">
@@ -1494,7 +1549,7 @@
       </div>
       <a class="footer__privacy" href="#">Политика конфиденциальности</a>
     </div>
-  </footer> -->
+  </footer>
 
   <!-- Модалки
   <div class="modal modal--preload" data-modal="feedback">
