@@ -1,0 +1,27 @@
+.background {
+  position: relative;
+}
+
+.background__image {
+
+  img {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  @include vp-767 {
+   img {
+      width: 171px;
+      height: 595px;
+   }
+  }
+}
+
+.background__image-mini {
+  img {
+    position: absolute;
+    top: 1600px;
+    right: 0;
+  }
+}
