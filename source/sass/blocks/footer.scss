@@ -53,6 +53,8 @@
   font-weight: 600;
   line-height: 18px;
   color: #2d383f;
+  min-width: 200px;
+  text-align: right;
 
   &:hover,
   &:focus-visible {
@@ -83,7 +85,7 @@
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 19px;
 
   @include vp-1199 {
     margin-left: 15px;

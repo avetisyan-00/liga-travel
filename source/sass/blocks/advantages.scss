@@ -1,9 +1,9 @@
 .advantages {
   position: relative;
   text-align: center;
-  padding-top: 42px;
+  z-index: 3;
   padding-bottom: 80px;
-  margin-bottom: 80px;
+  margin-bottom: 89px;
 }
 
 .advantages__background-top {
@@ -95,12 +95,14 @@
 }
 
 .advantages__arrows {
-  bottom: 20px;
+  bottom: -4px;
   left: 50%;
   transform: translateX(-50%);
 }
 
 .advantages__blocks {
+  padding-top: 17px;
+
   @include vp-1199 {
     padding-right: 45px;
     padding-left: 45px;

@@ -1,5 +1,6 @@
 .about {
   position: relative;
+  z-index: 3;
   min-height: 474px;
 
   @include vp-1199 {
@@ -14,12 +15,17 @@
 .about__slogan {
   margin-top: 0;
   margin-bottom: 57px;
+
+  @include vp-1199 {
+    padding-left: 5px;
+    margin-bottom: 34px;
+  }
 }
 
 .about__image {
   position: absolute;
   left: 0;
-  top: 0;
+  top: -3px;
   max-width: 57%;
 
   @include vp-1199 {
@@ -38,7 +44,7 @@
   position: relative;
   z-index: 2;
   width: 50%;
-  padding-left: 10px;
+  padding-left: 15px;
   margin-left: auto;
 
   @include vp-1199 {
@@ -59,7 +65,7 @@
     line-height: 21px;
     color: #2d383f;
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
   }
 
   p {
@@ -68,6 +74,14 @@
     line-height: 22px;
     color: #2d383f;
     margin: 0;
-    margin-bottom: 25px;
+    margin-bottom: 27px;
+  }
+
+  @include vp-1199 {
+    h3 {
+      font-size: 18px;
+      line-height: 18px;
+      margin-bottom: 12px;
+    }
   }
 }

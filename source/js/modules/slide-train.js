@@ -11,16 +11,19 @@ const initSliderTrain = () => {
 
       breakpoints: {
         1200: {
+          initialSlide: 4,
           slidesPerView: 4,
           spaceBetween: 20,
         },
 
         768: {
+          initialSlide: 4,
           slidesPerView: 3,
           spaceBetween: 20,
         },
 
         320: {
+          initialSlide: 2,
           slidesPerView: 1,
           spaceBetween: 20,
         },

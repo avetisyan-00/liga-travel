@@ -1,11 +1,22 @@
 .tours {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  position: relative;
+  z-index: 3;
+  padding-top: 103px;
+  padding-bottom: 44px;
+
+  @include vp-1199 {
+    padding-top: 48px;
+    padding-bottom: 17px;
+  }
 }
 
 .tours__slogan {
   margin: 0;
-  margin-bottom: 53px;
+  margin-bottom: 50px;
+
+  @include vp-1199 {
+    margin-bottom: 23px;
+  }
 }
 
 .tours__slider {
@@ -78,14 +89,14 @@
   font-weight: 500;
   line-height: 12px;
   color: #ffffff;
-  padding-top: 4px;
+  padding-top: 8px;
   padding-bottom: 4px;
   padding-left: 32px;
   margin-left: 14px;
 
   svg {
     position: absolute;
-    top: 0;
+    top: 5px;
     left: 0;
     color: #ffffff;
     width: 20px;
@@ -101,7 +112,7 @@
   color: #ffffff;
   padding-bottom: 15px;
   margin-bottom: 15px;
-  margin-top: 15px;
+  margin-top: 17px;
 
   &::before {
     content: "";
@@ -138,11 +149,24 @@
   font-weight: 700;
   line-height: 13px;
   color: #ffffff;
+  display: flex;
+
+  svg {
+    margin-right: 1px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
 
 .tours__link-wrapper {
   text-align: center;
   margin-top: 53px;
+
+  @include vp-1199 {
+    margin-top: 25px;
+  }
 }
 
 .tours__link {
@@ -154,7 +178,7 @@
   text-transform: uppercase;
   color: #2d383f;
   display: inline-block;
-  padding: 10px 34px 10px 10px;
+  padding: 10px 31px 10px 10px;
 
   svg {
     position: absolute;
@@ -188,6 +212,6 @@
 }
 
 .tours__arrows {
-  top: 20px;
+  top: 17px;
   right: 0;
 }

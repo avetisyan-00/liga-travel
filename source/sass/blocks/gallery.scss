@@ -7,6 +7,10 @@
   }
 }
 
+.gallery__slogan {
+  margin-bottom: 24px;
+}
+
 .gallery__block {
   display: flex;
 }
@@ -68,8 +72,8 @@
 }
 
 .gallery__arrows {
-  bottom: 0;
-  right: 47px;
+  bottom: 8px;
+  right: 46px;
 }
 
 .gallery__header {

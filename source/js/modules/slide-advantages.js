@@ -5,8 +5,8 @@ function initSliderAdvantages() {
   function initSwiper() {
     mySwiper = new Swiper(sliderAdvantages, {
       centeredSlides: true,
+      initialSlide: 2,
       slidesPerView: 'auto',
-      initialSlide: 4,
       spaceBetween: 30,
       loop: true,
 

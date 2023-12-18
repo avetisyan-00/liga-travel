@@ -15,7 +15,7 @@
   height: auto;
 
   @include vp-1199 {
-    padding-top: 211px;
+    padding-top: 213px;
     padding-bottom: 121px;
   }
 }
@@ -56,7 +56,7 @@
   line-height: 77px;
   color: #ffffff;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 23px;
   position: relative;
   z-index: 3;
 
@@ -80,7 +80,7 @@
   line-height: 24px;
   color: #ffffff;
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 37px;
   width: 420px;
 
   @include vp-1199 {
