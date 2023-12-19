@@ -1933,6 +1933,7 @@ button,
 @media (max-width: 1199px) {
   .review {
     padding-top: 36px;
+    padding-bottom: 56px;
   }
 }
 
