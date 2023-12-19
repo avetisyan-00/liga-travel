@@ -1,5 +1,6 @@
 .background {
   position: relative;
+  overflow: hidden;
 }
 
 .background__image {
@@ -21,7 +22,7 @@
 .background__image-mini {
   img {
     position: absolute;
-    top: 1600px;
+    top: 1552px;
     right: 0;
   }
 }

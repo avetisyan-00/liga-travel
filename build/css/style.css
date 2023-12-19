@@ -1799,11 +1799,25 @@ button,
   padding-bottom: 80px;
   margin-bottom: 89px;
 }
+@media (max-width: 1199px) {
+  .advantages {
+    margin-bottom: 0;
+    padding-bottom: 21px;
+  }
+}
 
 .advantages__background-top img {
   position: absolute;
   left: 0;
-  top: -100px;
+  top: -170px;
+}
+@media (max-width: 1199px) {
+  .advantages__background-top img {
+    width: 881px;
+    height: 402px;
+    left: 0;
+    top: -170px;
+  }
 }
 @media (max-width: 767px) {
   .advantages__background-top {
@@ -1814,7 +1828,15 @@ button,
 .advantages__background-bottom img {
   position: absolute;
   right: 0;
-  top: 0;
+  top: 14px;
+}
+@media (max-width: 1199px) {
+  .advantages__background-bottom img {
+    width: 683px;
+    height: 263px;
+    left: 0;
+    top: -170px;
+  }
 }
 @media (max-width: 767px) {
   .advantages__background-bottom {
@@ -1832,6 +1854,7 @@ button,
 @media (max-width: 1199px) {
   .advantages__slide {
     width: 100%;
+    padding: 30px 19px;
   }
   .advantages__slide:last-child {
     width: 380px;
@@ -1840,6 +1863,11 @@ button,
     grid-column: 1/3;
     -ms-grid-column-align: center;
         justify-self: center;
+    padding-top: 29px;
+  }
+  .advantages__slide:last-child h3 {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 @media (max-width: 767px) {
@@ -1870,6 +1898,12 @@ button,
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
+@media (max-width: 1199px) {
+  .advantages__icon {
+    width: 48px;
+    height: 48px;
+  }
+}
 
 .advantages__header h3 {
   font-size: 18px;
@@ -1887,6 +1921,13 @@ button,
   color: #2d383f;
   margin: 0;
 }
+@media (max-width: 1199px) {
+  .advantages__header h3 {
+    font-size: 16px;
+    line-height: 16px;
+    margin-top: 24px;
+  }
+}
 
 .advantages__arrows {
   bottom: -4px;
@@ -1894,6 +1935,11 @@ button,
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+@media (max-width: 1199px) {
+  .advantages .advantages__arrows {
+    display: none;
+  }
 }
 
 .advantages__blocks {
@@ -1926,7 +1972,7 @@ button,
 
 .review {
   position: relative;
-  z-index: 3;
+  z-index: 4;
   padding-top: 31px;
   padding-bottom: 16px;
 }
@@ -2414,6 +2460,7 @@ button,
 
 .background {
   position: relative;
+  overflow: hidden;
 }
 
 .background__image img {
@@ -2430,7 +2477,7 @@ button,
 
 .background__image-mini img {
   position: absolute;
-  top: 1600px;
+  top: 1552px;
   right: 0;
 }
 
@@ -3120,6 +3167,11 @@ button,
 
 .gallery__slogan {
   margin-bottom: 24px;
+}
+@media (max-width: 1199px) {
+  .gallery__slogan {
+    margin-bottom: 18px;
+  }
 }
 
 .gallery__block {

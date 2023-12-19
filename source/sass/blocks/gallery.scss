@@ -9,6 +9,10 @@
 
 .gallery__slogan {
   margin-bottom: 24px;
+
+  @include vp-1199 {
+    margin-bottom: 18px;
+  }
 }
 
 .gallery__block {
