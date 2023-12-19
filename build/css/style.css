@@ -1816,7 +1816,14 @@ button,
     width: 881px;
     height: 402px;
     left: 0;
-    top: -170px;
+    top: 100px;
+  }
+}
+@media (max-width: 1023px) {
+  .advantages__background-top img {
+    width: 753px;
+    height: 402px;
+    top: 166px;
   }
 }
 @media (max-width: 767px) {
@@ -1834,8 +1841,15 @@ button,
   .advantages__background-bottom img {
     width: 683px;
     height: 263px;
-    left: 0;
-    top: -170px;
+    right: 0;
+    top: 602px;
+  }
+}
+@media (max-width: 1023px) {
+  .advantages__background-bottom img {
+    width: 555px;
+    height: 263px;
+    top: 667px;
   }
 }
 @media (max-width: 767px) {
@@ -2255,8 +2269,8 @@ button,
   .contacts__container {
     padding-left: 0;
     padding-right: 0;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 39px;
+    padding-bottom: 38px;
   }
 }
 
@@ -2281,7 +2295,7 @@ button,
   .contacts__block {
     max-width: 100%;
     padding-left: 45px;
-    padding-right: 45px;
+    padding-right: 40px;
   }
 }
 @media (max-width: 767px) {
@@ -2328,7 +2342,7 @@ button,
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-bottom: 40px;
+    margin-bottom: 39px;
   }
 }
 
@@ -2388,6 +2402,11 @@ button,
   margin: 0;
   margin-bottom: 22px;
 }
+@media (max-width: 1199px) {
+  .contacts__slogan {
+    margin-bottom: 17px;
+  }
+}
 
 .contacts__header {
   margin-bottom: 50px;
@@ -2423,6 +2442,7 @@ button,
   .contacts__text {
     font-size: 16px;
     line-height: 16px;
+    margin-bottom: 5px;
   }
 }
 @media (max-width: 767px) {
@@ -2468,6 +2488,12 @@ button,
   top: 0;
   right: 0;
 }
+@media (max-width: 1199px) {
+  .background__image img {
+    width: 602px;
+    height: 1364px;
+  }
+}
 @media (max-width: 767px) {
   .background__image img {
     width: 171px;
@@ -2509,6 +2535,7 @@ button,
 }
 @media (max-width: 1199px) {
   .form__container {
+    padding-top: 190px;
     min-height: 680px;
   }
 }
@@ -2540,9 +2567,12 @@ button,
 }
 @media (max-width: 1199px) {
   .form__header {
+    margin-bottom: 9px;
+    padding-right: 2px;
     max-width: 300px;
   }
   .form__header h2 {
+    margin-bottom: 28px;
     font-size: 25px;
     line-height: 25px;
   }
@@ -2603,6 +2633,7 @@ button,
 }
 @media (max-width: 1199px) {
   .form__field-group input {
+    height: 50px;
     width: 100%;
     padding-left: 15px;
   }
@@ -2979,6 +3010,11 @@ button,
   padding-top: 32px;
   padding-bottom: 32px;
 }
+@media (max-width: 1199px) {
+  .footer__container {
+    padding-top: 34px;
+  }
+}
 
 .footer__wrapper {
   display: -webkit-box;
@@ -3068,7 +3104,8 @@ button,
 }
 @media (max-width: 1199px) {
   .footer__list {
-    margin-left: 15px;
+    margin-left: 5px;
+    gap: 13px;
   }
 }
 @media (max-width: 767px) {
@@ -3120,6 +3157,12 @@ button,
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+@media (max-width: 1199px) {
+  .social__list {
+    gap: 18px;
+    margin: 35px 0 26px 0;
+  }
 }
 
 .social__link {
@@ -3238,6 +3281,17 @@ button,
 .gallery__arrows {
   bottom: 8px;
   right: 46px;
+}
+@media (max-width: 1199px) {
+  .gallery__arrows {
+    bottom: 0;
+  }
+  .gallery__arrows button {
+    width: 34px;
+  }
+  .gallery .gallery__arrows {
+    width: 71px;
+  }
 }
 
 .gallery__header {

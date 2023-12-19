@@ -23,7 +23,15 @@
       width: 881px;
       height: 402px;
       left: 0;
-      top: -170px;
+      top: 100px;
+    }
+  }
+
+  @include vp-1023 {
+    img {
+      width: 753px;
+      height: 402px;
+      top: 166px;
     }
   }
 
@@ -43,8 +51,16 @@
     img {
       width: 683px;
       height: 263px;
-      left: 0;
-      top: -170px;
+      right: 0;
+      top: 602px;
+    }
+  }
+
+  @include vp-1023 {
+    img {
+      width: 555px;
+      height: 263px;
+      top: 667px;
     }
   }
 

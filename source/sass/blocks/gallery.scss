@@ -78,6 +78,18 @@
 .gallery__arrows {
   bottom: 8px;
   right: 46px;
+
+  @include vp-1199 {
+    bottom: 0;
+    
+    button {
+      width: 34px;
+    }
+
+    .gallery & {
+      width: 71px;
+    }
+  }
 }
 
 .gallery__header {
