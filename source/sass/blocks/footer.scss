@@ -12,6 +12,10 @@
   @include vp-1199 {
     padding-top: 34px;
   }
+
+  @include vp-767 {
+    padding-top: 23px;
+  }
 }
 
 .footer__wrapper {
@@ -100,12 +104,11 @@
   @include vp-767 {
     display: block;
     width: 100%;
-    padding-left: 5px;
-    padding-right: 5px;
-    margin-top: 20px;
-    margin-bottom: 15px;
+    margin-top: 17px;
+    margin-bottom: 0;
     column-count: 2;
-    column-gap: 46px;
+    column-gap: 73px;
+    margin-left: 0;
   }
 }
 
@@ -127,6 +130,6 @@
 
 .footer__list-item {
   @include vp-767 {
-    margin-bottom: 9px;
+    margin-bottom: 5px;
   }
 }

@@ -18,6 +18,11 @@
     padding-top: 213px;
     padding-bottom: 121px;
   }
+
+  @include vp-767 {
+    padding-top: 140px;
+    padding-bottom: 100px;
+  }
 }
 
 .hero__background {
@@ -71,6 +76,7 @@
     font-size: 26px;
     line-height: 26px;
     max-width: 332px;
+    margin-bottom: 14px;
   }
 }
 
@@ -92,6 +98,7 @@
     font-size: 15px;
     line-height: 20px;
     max-width: 332px;
+    margin-bottom: 61px;
   }
 }
 

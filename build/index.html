@@ -76,7 +76,7 @@
 
   <main>
     <h1 class="visually-hidden">Организация походов в горы.</h1>
-    <section class="hero swiper">
+    <section class="hero swiper" data-test="hero">
       <div class="hero__wrapper swiper-wrapper">
         <div class="hero__slide hero__slide--active swiper-slide">
           <div class="hero__background">
@@ -281,7 +281,8 @@
             alt="Магический Кавказ!">
         </picture>
       </div>
-      <section class="tours" id="tours">
+
+      <section class="tours" id="tours" data-test="tours">
         <div class="tours__container container">
           <div class="tours__slider swiper">
             <h2 class="tours__slogan title title--big" data-slogan="Ближайшие туры">Ближайшие туры</h2>
@@ -593,7 +594,7 @@
         </div>
       </section>
 
-      <section class="train" id="train">
+      <section class="train" id="train" data-test="training">
         <div class="train__container container">
           <div class="train__header">
             <h2 class="train__slogan title title--mini" data-slogan="Обучение">Обучение</h2>
@@ -899,7 +900,7 @@
         </div>
       </section>
 
-      <section class="about" id="about">
+      <section class="about" id="about" data-test="about">
         <div class="about__image">
           <picture>
             <source type="image/webp" media="(max-width: 767px)"
@@ -931,7 +932,7 @@
       </section>
     </div>
 
-    <section class="review" id="review">
+    <section class="review" id="review" data-test="reviews">
       <div class="review__container container">
         <h2 class="review__slogan title title--mini" data-slogan="Отзывы">Отзывы</h2>
 
@@ -1202,7 +1203,7 @@
       </div>
     </section>
 
-    <section class="advantages">
+    <section class="advantages" data-test="adv">
       <div class="advantages__background-top">
         <picture>
           <source type="image/webp" media="(max-width: 1023px)"
@@ -1260,7 +1261,7 @@
             <div class="advantages__header">
               <h3>Экспертиза и знания</h3>
               <p>Наша команда опытных гидов имеет обширные знания о местности, погодных условиях и технике
-                безопасности. Это гарантирует, что&nbsp;наши клиенты находятся в&nbsp;надежных руках и могут в полной
+                безопасности. Это&nbsp;гарантирует, что&nbsp;наши клиенты находятся в&nbsp;надежных руках и могут в полной
                 мере
                 насладиться опытом без&nbsp;опасений.</p>
             </div>
@@ -1275,7 +1276,7 @@
               <h3>Оборудование и снаряжение</h3>
               <p>Мы предоставляем клиентам все&nbsp;необходимое оборудование, необходимое для путешествия.
                 Это&nbsp;избавляет
-                клиентов от&nbsp;необходимости покупать, брать с&nbsp;собой снаряжение, что делает путешествие более
+                клиентов от&nbsp;необходимости покупать, брать с&nbsp;собой снаряжение, что&nbsp;делает путешествие более
                 удобным
                 и&nbsp;экономически выгодным.</p>
             </div>
@@ -1289,7 +1290,7 @@
             </div>
             <div class="advantages__header">
               <h3>Индивидуальные маршруты</h3>
-              <p>Предлагаем широкий выбор туров, отвечающих различным уровням мастерства и интересам.
+              <p>Предлагаем широкий выбор туров, отвечающих различным уровням мастерства и&nbsp;интересам.
                 Мы&nbsp;также&nbsp;можем
                 адаптировать маршруты к вашим конкретным потребностям и предпочтениям, чтобы&nbsp;вы&nbsp;получили
                 индивидуальный опыт.</p>
@@ -1329,7 +1330,7 @@
       </div>
     </section>
 
-    <section class="gallery" id="gallery">
+    <section class="gallery" id="gallery" data-test="gallery">
       <div class="gallery__container container">
         <div class="gallery__header">
           <h2 class="gallery__slogan title title--mini" data-slogan="Фотогалерея">Фотогалерея</h2>
@@ -1469,7 +1470,7 @@
     </section>
 
 
-    <form class="form" action="https://echo.htmlacademy.ru" method="post">
+    <form class="form" action="https://echo.htmlacademy.ru" method="post" data-test="form">
       <div class="form__image">
         <picture>
           <source type="image/webp" media="(max-width: 767px)"
@@ -1562,7 +1563,7 @@
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="footer" data-test="footer">
     <div class="footer__container container">
       <div class="footer__wrapper">
         <a class="footer__logo logo">
@@ -1638,35 +1639,6 @@
       <a class="footer__privacy" href="#">Политика конфиденциальности</a>
     </div>
   </footer>
-
-  <!-- Модалки
-  <div class="modal modal--preload" data-modal="feedback">
-    <div class="modal__wrapper">
-      <div class="modal__overlay" data-close-modal></div>
-      <div class="modal__content">
-        <p class="modal__description">Обычная модалка</p>
-        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-          <svg width="15" height="15">
-            <use xlink:href="img/sprite.svg#icon-close"></use>
-          </svg>
-        </button>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-    <div class="modal__wrapper">
-      <div class="modal__overlay" data-close-modal></div>
-      <div class="modal__content">
-        <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-          <svg width="15" height="15">
-            <use xlink:href="img/sprite.svg#icon-close"></use>
-          </svg>
-        </button>
-      </div>
-    </div>
-  </div> -->
 
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
