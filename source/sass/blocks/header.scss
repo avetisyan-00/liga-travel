@@ -7,7 +7,7 @@
 
   &--opened {
     @include vp-1199 {
-      background-color: rgba(45, 56, 63, 0.60);
+      background-color: rgba(45, 56, 63, 0.6);
       position: absolute;
       top: 0;
       right: 0;
@@ -50,7 +50,9 @@
 
 .header__container {
   @include vp-1199 {
-    padding: 0;
+    .header & {
+      padding: 0;
+    }
   }
 }
 
@@ -192,6 +194,7 @@
 
 .header__nav-toggle {
   display: none;
+
   @include vp-1199 {
     position: absolute;
     top: 28px;
@@ -229,20 +232,20 @@
     .header--opened & {
       span {
         background-color: $color-default-black;
+      }
 
-        &:nth-child(1) {
-          top: 11px;
-          transform: rotate(45deg);
-        }
+      span:nth-child(1) {
+        top: 11px;
+        transform: rotate(45deg);
+      }
 
-        &:nth-child(2) {
-          display: none;
-        }
+      span:nth-child(2) {
+        display: none;
+      }
 
-        &:nth-child(3) {
-          top: 11px;
-          transform: rotate(-45deg);
-        }
+      span:nth-child(3) {
+        top: 11px;
+        transform: rotate(-45deg);
       }
     }
 
@@ -258,7 +261,7 @@
 }
 
 .header__logo {
-  padding: 11px 31px 10px 31px;
+  padding: 11px 31px 10px;
   color: #ffffff;
 
   @include vp-1199 {

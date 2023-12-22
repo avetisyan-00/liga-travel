@@ -2,9 +2,9 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Описание проекта">
   <title>Путешествия</title>
   <link rel="preload" href="fonts/rouble.woff2" as="font">
@@ -23,9 +23,10 @@
   <header class="header header--nojs">
     <div class="header__container container">
       <div class="header__wrapper">
-        <a class="header__logo logo">
+        <a class="header__logo logo" href="index.html">
+          <span class="visually-hidden">Логотип</span>
           <svg width="142" height="42" viewBox="0 0 142 42" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <use xlink:href="img/sprite.svg#logotype"></use>
+            <use href="img/sprite.svg#logotype"></use>
           </svg>
         </a>
         <button class="header__nav-toggle" type="button" aria-label="открыть меню">
@@ -86,8 +87,8 @@
               <source type="image/webp" media="(max-width: 1199px)"
                 srcset="img/background-tablet.webp 1x, img/background-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/background.webp 1x, img/background@2x.webp 2x">
-              <source media="(max-width: 767px)" srcset="img/background-mobile.png 1x, img/background-mobile@2x.png 2x">
-              <source media="(max-width: 1199px)"
+              <source type="image/png" media="(max-width: 767px)" srcset="img/background-mobile.png 1x, img/background-mobile@2x.png 2x">
+              <source type="image/png" media="(max-width: 1199px)"
                 srcset="img/background-tablet.png 1x, img/background-tablet@2x.png 2x">
               <img src="img/background.png" srcset="img/background@2x.png 2x" width="1440" height="800"
                 alt="Самый хороший спортзал!">
@@ -95,26 +96,26 @@
           </div>
           <div class="hero__container container">
             <div class="hero__header">
-              <h2>Захватывающие вершины&nbsp;Кавказа</h2>
+              <h2>Захватывающие вершины Кавказа</h2>
               <p>
                 В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на вершину
                 горы
                 Чегет.
               </p>
-              <a class="hero__button btn" href="">Смотреть тур</a>
+              <a class="hero__button btn" href="#">Смотреть тур</a>
               <div class="hero__footer">
                 <span class="hero__days">
                   6 дней/5 ночей
                   <svg width="12" height="22" viewBox="0 0 12 22" xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor">
-                    <use xlink:href="img/sprite.svg#moon"></use>
+                    <use href="img/sprite.svg#moon"></use>
                   </svg>
                 </span>
                 <span class="hero__days">
                   Высокая сложность
                   <svg width="12" height="22" viewBox="0 0 12 22" xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor">
-                    <use xlink:href="img/sprite.svg#level"></use>
+                    <use href="img/sprite.svg#level"></use>
                   </svg>
                 </span>
               </div>
@@ -128,7 +129,7 @@
                     <source type="image/webp" media="(max-width: 1199px)"
                       srcset="img/video-tablet.webp 1x, img/video-tablet@2x.webp 2x">
                     <source type="image/webp" srcset="img/video.webp 1x, img/video@2x.webp 2x">
-                    <source media="(max-width: 1199px)" srcset="img/video-tablet.png 1x, img/video-tablet@2x.png 2x">
+                    <source type="image/png" media="(max-width: 1199px)" srcset="img/video-tablet.png 1x, img/video-tablet@2x.png 2x">
                     <img src="img/video.png" srcset="img/video@2x.png 2x" width="482" height="317"
                       alt="Самые красивые места!">
                   </picture>
@@ -136,7 +137,7 @@
                 <button class="hero__video-play" type="button">
                   <svg width="12" height="22" viewBox="0 0 12 22" fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="img/sprite.svg#play"></use>
+                    <use href="img/sprite.svg#play"></use>
                   </svg>
                   <span class="visually-hidden">Запустить видео.</span>
                 </button>
@@ -152,9 +153,9 @@
               <source type="image/webp" media="(max-width: 1199px)"
                 srcset="img/background-two-tablet.webp 1x, img/background-two-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/background-two.webp 1x, img/background-two@2x.webp 2x">
-              <source media="(max-width: 767px)"
+              <source type="image/png" media="(max-width: 767px)"
                 srcset="img/background-two-mobile.png 1x, img/background-two-mobile@2x.png 2x">
-              <source media="(max-width: 1199px)"
+              <source type="image/png" media="(max-width: 1199px)"
                 srcset="img/background-two-tablet.png 1x, img/background-two-tablet@2x.png 2x">
               <img src="img/background-two.png" srcset="img/background-two@2x.png 2x" width="1440" height="800"
                 alt="Горы Камчатки!">
@@ -169,20 +170,20 @@
                 уголков
                 дикой природы в мире.
               </p>
-              <a class="hero__button btn" href="">Смотреть тур</a>
+              <a class="hero__button btn" href="#">Смотреть тур</a>
               <div class="hero__footer">
                 <span class="hero__days">
                   9 дней/10 ночей
                   <svg width="12" height="22" viewBox="0 0 12 22" xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor">
-                    <use xlink:href="img/sprite.svg#moon"></use>
+                    <use href="img/sprite.svg#moon"></use>
                   </svg>
                 </span>
                 <span class="hero__days">
                   Средняя сложность
                   <svg width="12" height="22" viewBox="0 0 12 22" xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor">
-                    <use xlink:href="img/sprite.svg#level"></use>
+                    <use href="img/sprite.svg#level"></use>
                   </svg>
                 </span>
               </div>
@@ -192,7 +193,7 @@
                 <source type="image/webp" media="(max-width: 1199px)"
                   srcset="img/photo-cards-tablet.webp 1x, img/photo-cards-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="img/photo-cards.webp 1x, img/photo-cards@2x.webp 2x">
-                <source media="(max-width: 1199px)"
+                <source type="image/png" media="(max-width: 1199px)"
                   srcset="img/photo-cards-tablet.png 1x, img/photo-cards-tablet@2x.png 2x">
                 <img src="img/photo-cards.png" srcset="img/photo-cards@2x.png 2x" width="410" height="459"
                   alt="Озеро среди гор!">
@@ -208,9 +209,9 @@
               <source type="image/webp" media="(max-width: 1199px)"
                 srcset="img/background-three-tablet.webp 1x, img/background-three-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/background-three.webp 1x, img/background-three@2x.webp 2x">
-              <source media="(max-width: 767px)"
+              <source type="image/png" media="(max-width: 767px)"
                 srcset="img/background-three-mobile.png 1x, img/background-three-mobile@2x.png 2x">
-              <source media="(max-width: 1199px)"
+              <source type="image/png" media="(max-width: 1199px)"
                 srcset="img/background-three-tablet.png 1x, img/background-three-tablet@2x.png 2x">
               <img src="img/background-three.png" srcset="img/background-three@2x.png 2x" width="1440" height="800"
                 alt="Магический Алтай!">
@@ -226,26 +227,26 @@
                 дух ландшафтов
                 Алтайских гор.
               </p>
-              <a class="hero__button btn" href="">Смотреть тур</a>
+              <a class="hero__button btn" href="#">Смотреть тур</a>
               <div class="hero__footer">
                 <span class="hero__days">
                   8 дней/7 ночей
                   <svg width="12" height="22" viewBox="0 0 12 22" xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor">
-                    <use xlink:href="img/sprite.svg#moon"></use>
+                    <use href="img/sprite.svg#moon"></use>
                   </svg>
                 </span>
                 <span class="hero__days">
                   Лёгкая сложность
                   <svg width="12" height="22" viewBox="0 0 12 22" xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor">
-                    <use xlink:href="img/sprite.svg#level"></use>
+                    <use href="img/sprite.svg#level"></use>
                   </svg>
                 </span>
               </div>
             </div>
             <div class="hero__music">
-              <iframe style="border:none;width:385px;height:215px;" width="385" height="215"
+              <iframe title="Музыка" width="385" height="215"
                 src="https://music.yandex.ru/iframe/track/119107082/25474374"></iframe>
             </div>
           </div>
@@ -263,9 +264,9 @@
           <source type="image/webp" media="(max-width: 1199px)"
             srcset="img/clouds-background-tablet.webp 1x, img/clouds-background-tablet@2x.webp 2x">
           <source type="image/webp" srcset="img/clouds-background.webp 1x, img/clouds-background@2x.webp 2x">
-          <source media="(max-width: 767px)"
+          <source type="image/png" media="(max-width: 767px)"
             srcset="img/clouds-background-mobile.png 1x, img/clouds-background-mobile@2x.png 2x">
-          <source media="(max-width: 1199px)"
+          <source type="image/png" media="(max-width: 1199px)"
             srcset="img/clouds-background-tablet.png 1x, img/clouds-background-tablet@2x.png 2x">
           <img src="img/clouds-background.png" srcset="img/clouds-background@2x.png 2x" width="602" height="1630"
             alt="Магический Кавказ!">
@@ -276,7 +277,7 @@
           <source type="image/webp" media="(max-width: 767px)"
             srcset="img/clouds-mini-tablet.webp 1x, img/clouds-mini-tablet@2x.webp 2x">
           <source type="image/webp" srcset="img/clouds-mini.webp 1x, img/clouds-mini@2x.webp 2x">
-          <source media="(max-width: 767px)" srcset="img/clouds-mini-tablet.png 1x, img/clouds-mini-tablet@2x.png 2x">
+          <source type="image/png" media="(max-width: 767px)" srcset="img/clouds-mini-tablet.png 1x, img/clouds-mini-tablet@2x.png 2x">
           <img src="img/clouds-mini.png" srcset="img/clouds-mini@2x.png 2x" width="620" height="280"
             alt="Магический Кавказ!">
         </picture>
@@ -292,14 +293,14 @@
                   aria-label="назад.">
                   <svg width="14" height="9" viewBox="0 0 14 9" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
                     stroke="currentColor">
-                    <use xlink:href="img/sprite.svg#left"></use>
+                    <use href="img/sprite.svg#left"></use>
                   </svg>
                 </button>
                 <button class="arrows-slider__btn arrows-slider__btn--right" id="tours-slider-next" type="button"
                   aria-label="вперед.">
                   <svg width="14" height="9" viewBox="0 0 14 9" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
                     stroke="currentColor">
-                    <use xlink:href="img/sprite.svg#right"></use>
+                    <use href="img/sprite.svg#right"></use>
                   </svg>
                 </button>
               </div>
@@ -314,9 +315,9 @@
                     <source type="image/webp" media="(max-width: 1199px)"
                       srcset="img/tours-one-tablet.webp 1x, img/tours-one-tablet@2x.webp 2x">
                     <source type="image/webp" srcset="img/tours-one.webp 1x, img/tours-one@2x.webp 2x">
-                    <source media="(max-width: 767px)"
+                    <source type="image/png" media="(max-width: 767px)"
                       srcset="img/tours-one-mobile.png 1x, img/tours-one-mobile@2x.png 2x">
-                    <source media="(max-width: 1199px)"
+                    <source type="image/png" media="(max-width: 1199px)"
                       srcset="img/tours-one-tablet.png 1x, img/tours-one-tablet@2x.png 2x">
                     <img src="img/tours-one.png" srcset="img/tours-one@2x.png 2x" width="380" height="416"
                       alt="Магический Кавказ!">
@@ -325,23 +326,23 @@
                 <div class="tours__miniblock">
                   <span class="tours__place">
                     Кавказ
-                    <svg svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"
                       fill="currentColor">
-                      <use xlink:href="img/sprite.svg#geo"></use>
+                      <use href="img/sprite.svg#geo"></use>
                     </svg>
                   </span>
                   <span class="tours__days">
                     4 дня
-                    <svg svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg"
+                    <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg"
                       fill="currentColor">
-                      <use xlink:href="img/sprite.svg#sun"></use>
+                      <use href="img/sprite.svg#sun"></use>
                     </svg>
                   </span>
                   <span class="tours__days">
                     3 ночи
                     <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg"
                       fill="currentColor">
-                      <use xlink:href="img/sprite.svg#moon"></use>
+                      <use href="img/sprite.svg#moon"></use>
                     </svg>
                   </span>
                 </div>
@@ -352,19 +353,19 @@
                     <span class="tours__hard">Сложность:</span>
                     <span class="tours__nub">
                       <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                        <use xlink:href="img/sprite.svg#star-full"></use>
+                        <use href="img/sprite.svg#star-full"></use>
                       </svg>
                       <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                        <use xlink:href="img/sprite.svg#star-full"></use>
+                        <use href="img/sprite.svg#star-full"></use>
                       </svg>
                       <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                        <use xlink:href="img/sprite.svg#star-full"></use>
+                        <use href="img/sprite.svg#star-full"></use>
                       </svg>
                       <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                        <use xlink:href="img/sprite.svg#star-full"></use>
+                        <use href="img/sprite.svg#star-full"></use>
                       </svg>
                       <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                        <use xlink:href="img/sprite.svg#star"></use>
+                        <use href="img/sprite.svg#star"></use>
                       </svg>
                     </span>
                   </div>
@@ -386,9 +387,9 @@
                     <source type="image/webp" media="(max-width: 1199px)"
                       srcset="img/tours-one-tablet.webp 1x, img/tours-one-tablet@2x.webp 2x">
                     <source type="image/webp" srcset="img/tours-one.webp 1x, img/tours-one@2x.webp 2x">
-                    <source media="(max-width: 767px)"
+                    <source type="image/png" media="(max-width: 767px)"
                       srcset="img/tours-one-mobile.png 1x, img/tours-one-mobile@2x.png 2x">
-                    <source media="(max-width: 1199px)"
+                    <source type="image/png" media="(max-width: 1199px)"
                       srcset="img/tours-one-tablet.png 1x, img/tours-one-tablet@2x.png 2x">
                     <img src="img/tours-one.png" srcset="img/tours-one@2x.png 2x" width="380" height="416"
                       alt="Магический Кавказ!">
@@ -397,23 +398,23 @@
                 <div class="tours__miniblock">
                   <span class="tours__place">
                     Кавказ
-                    <svg svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"
                       fill="currentColor">
-                      <use xlink:href="img/sprite.svg#geo"></use>
+                      <use href="img/sprite.svg#geo"></use>
                     </svg>
                   </span>
                   <span class="tours__days">
                     4 дня
-                    <svg svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg"
+                    <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg"
                       fill="currentColor">
-                      <use xlink:href="img/sprite.svg#sun"></use>
+                      <use href="img/sprite.svg#sun"></use>
                     </svg>
                   </span>
                   <span class="tours__days">
                     3 ночи
                     <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg"
                       fill="currentColor">
-                      <use xlink:href="img/sprite.svg#moon"></use>
+                      <use href="img/sprite.svg#moon"></use>
                     </svg>
                   </span>
                 </div>
@@ -424,19 +425,19 @@
                     <span class="tours__hard">Сложность:</span>
                     <span class="tours__nub">
                       <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                        <use xlink:href="img/sprite.svg#star-full"></use>
+                        <use href="img/sprite.svg#star-full"></use>
                       </svg>
                       <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                        <use xlink:href="img/sprite.svg#star-full"></use>
+                        <use href="img/sprite.svg#star-full"></use>
                       </svg>
                       <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                        <use xlink:href="img/sprite.svg#star-full"></use>
+                        <use href="img/sprite.svg#star-full"></use>
                       </svg>
                       <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                        <use xlink:href="img/sprite.svg#star-full"></use>
+                        <use href="img/sprite.svg#star-full"></use>
                       </svg>
                       <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                        <use xlink:href="img/sprite.svg#star"></use>
+                        <use href="img/sprite.svg#star"></use>
                       </svg>
                     </span>
                   </div>
@@ -456,7 +457,7 @@
                     <source type="image/webp" media="(max-width: 1199px)"
                       srcset="img/tours-two-tablet.webp 1x, img/tours-two-tablet@2x.webp 2x">
                     <source type="image/webp" srcset="img/tours-two.webp 1x, img/tours-two@2x.webp 2x">
-                    <source media="(max-width: 1199px)"
+                    <source type="image/png" media="(max-width: 1199px)"
                       srcset="img/tours-two-tablet.png 1x, img/tours-two-tablet@2x.png 2x">
                     <img src="img/tours-two.png" srcset="img/tours-two@2x.png 2x" width="380" height="416"
                       alt="Магический Кавказ!">
@@ -465,23 +466,23 @@
                 <div class="tours__miniblock">
                   <span class="tours__place">
                     Алтай
-                    <svg svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"
                       fill="currentColor">
-                      <use xlink:href="img/sprite.svg#geo"></use>
+                      <use href="img/sprite.svg#geo"></use>
                     </svg>
                   </span>
                   <span class="tours__days">
                     14 дней
-                    <svg svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg"
+                    <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg"
                       fill="currentColor">
-                      <use xlink:href="img/sprite.svg#sun"></use>
+                      <use href="img/sprite.svg#sun"></use>
                     </svg>
                   </span>
                   <span class="tours__days">
                     13 ночей
                     <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg"
                       fill="currentColor">
-                      <use xlink:href="img/sprite.svg#moon"></use>
+                      <use href="img/sprite.svg#moon"></use>
                     </svg>
                   </span>
                 </div>
@@ -492,19 +493,19 @@
                     <span class="tours__hard">Сложность:</span>
                     <span class="tours__nub">
                       <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                        <use xlink:href="img/sprite.svg#star-full"></use>
+                        <use href="img/sprite.svg#star-full"></use>
                       </svg>
                       <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                        <use xlink:href="img/sprite.svg#star-full"></use>
+                        <use href="img/sprite.svg#star-full"></use>
                       </svg>
                       <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                        <use xlink:href="img/sprite.svg#star-full"></use>
+                        <use href="img/sprite.svg#star-full"></use>
                       </svg>
                       <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                        <use xlink:href="img/sprite.svg#star"></use>
+                        <use href="img/sprite.svg#star"></use>
                       </svg>
                       <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                        <use xlink:href="img/sprite.svg#star"></use>
+                        <use href="img/sprite.svg#star"></use>
                       </svg>
                     </span>
                   </div>
@@ -529,23 +530,23 @@
                 <div class="tours__miniblock">
                   <span class="tours__place">
                     Адыгея
-                    <svg svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"
                       fill="currentColor">
-                      <use xlink:href="img/sprite.svg#geo"></use>
+                      <use href="img/sprite.svg#geo"></use>
                     </svg>
                   </span>
                   <span class="tours__days">
                     7 дней
-                    <svg svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg"
+                    <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg"
                       fill="currentColor">
-                      <use xlink:href="img/sprite.svg#sun"></use>
+                      <use href="img/sprite.svg#sun"></use>
                     </svg>
                   </span>
                   <span class="tours__days">
                     6 ночей
                     <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg"
                       fill="currentColor">
-                      <use xlink:href="img/sprite.svg#moon"></use>
+                      <use href="img/sprite.svg#moon"></use>
                     </svg>
                   </span>
                 </div>
@@ -556,19 +557,19 @@
                     <span class="tours__hard">Сложность:</span>
                     <span class="tours__nub">
                       <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                        <use xlink:href="img/sprite.svg#star-full"></use>
+                        <use href="img/sprite.svg#star-full"></use>
                       </svg>
                       <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                        <use xlink:href="img/sprite.svg#star-full"></use>
+                        <use href="img/sprite.svg#star-full"></use>
                       </svg>
                       <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                        <use xlink:href="img/sprite.svg#star-full"></use>
+                        <use href="img/sprite.svg#star-full"></use>
                       </svg>
                       <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                        <use xlink:href="img/sprite.svg#star-full"></use>
+                        <use href="img/sprite.svg#star-full"></use>
                       </svg>
                       <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                        <use xlink:href="img/sprite.svg#star"></use>
+                        <use href="img/sprite.svg#star"></use>
                       </svg>
                     </span>
                   </div>
@@ -587,7 +588,7 @@
           <div class="tours__link-wrapper">
             <a class="tours__link" href="#">Показать все туры
               <svg width="9" height="14" viewBox="0 0 9 14" xmlns="http://www.w3.org/2000/svg" stroke="currentColor">
-                <use xlink:href="img/sprite.svg#arrow"></use>
+                <use href="img/sprite.svg#arrow"></use>
               </svg>
             </a>
           </div>
@@ -609,14 +610,14 @@
                 aria-label="назад.">
                 <svg width="14" height="9" viewBox="0 0 14 9" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
                   stroke="currentColor">
-                  <use xlink:href="img/sprite.svg#left"></use>
+                  <use href="img/sprite.svg#left"></use>
                 </svg>
               </button>
               <button class="arrows-slider__btn arrows-slider__btn--right" id="train-slider-next" type="button"
                 aria-label="вперед.">
                 <svg width="14" height="9" viewBox="0 0 14 9" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
                   stroke="currentColor">
-                  <use xlink:href="img/sprite.svg#right"></use>
+                  <use href="img/sprite.svg#right"></use>
                 </svg>
               </button>
             </div>
@@ -631,9 +632,9 @@
                       <source type="image/webp" media="(max-width: 1199px)"
                         srcset="img/aleksandr-tablet.webp 1x, img/aleksandr-tablet@2x.webp 2x">
                       <source type="image/webp" srcset="img/aleksandr.webp 1x, img/aleksandr@2x.webp 2x">
-                      <source media="(min-width: 768px) and (max-width: 1023px)"
+                      <source type="image/png" media="(min-width: 768px) and (max-width: 1023px)"
                         srcset="img/aleksandr-tablet-two.png 1x, img/aleksandr-tablet-two@2x.png 2x">
-                      <source media="(max-width: 1199px)"
+                      <source type="image/png" media="(max-width: 1199px)"
                         srcset="img/aleksandr-tablet.png 1x, img/aleksandr-tablet@2x.png 2x">
                       <img src="img/aleksandr.png" srcset="img/aleksandr@2x.png 2x" width="255" height="200"
                         alt="Магический Кавказ!">
@@ -642,10 +643,11 @@
                       <h4 class="train__title">Александр
                         Прокофьев
                       </h4>
-                      <a class="train__social">
+                      <a class="train__social" href="#">
+                        <span class="visually-hidden">Вконтакте</span>
                         <svg width="14" height="8" viewBox="0 0 14 8" fill="currentColor"
                           xmlns="http://www.w3.org/2000/svg">
-                          <use xlink:href="img/sprite.svg#vk"></use>
+                          <use href="img/sprite.svg#vk"></use>
                         </svg>
                       </a>
                     </div>
@@ -661,9 +663,9 @@
                       <source type="image/webp" media="(max-width: 1199px)"
                         srcset="img/svetlana-tablet.webp 1x, img/svetlana-tablet@2x.webp 2x">
                       <source type="image/webp" srcset="img/svetlana.webp 1x, img/svetlana@2x.webp 2x">
-                      <source media="(min-width: 768px) and (max-width: 1023px)"
+                      <source type="image/png" media="(min-width: 768px) and (max-width: 1023px)"
                         srcset="img/svetlana-tablet-two.png 1x, img/svetlana-tablet-two@2x.png 2x">
-                      <source media="(max-width: 1199px)"
+                      <source type="image/png" media="(max-width: 1199px)"
                         srcset="img/svetlana-tablet.png 1x, img/svetlana-tablet@2x.png 2x">
                       <img src="img/svetlana.png" srcset="img/svetlana@2x.png 2x" width="255" height="200"
                         alt="Магический Кавказ!">
@@ -672,10 +674,11 @@
                       <h4 class="train__title">Светлана
                         Афиногенова
                       </h4>
-                      <a class="train__social">
+                      <a class="train__social" href="#">
+                        <span class="visually-hidden">Вконтакте</span>
                         <svg width="14" height="8" viewBox="0 0 14 8" fill="currentColor"
                           xmlns="http://www.w3.org/2000/svg">
-                          <use xlink:href="img/sprite.svg#vk"></use>
+                          <use href="img/sprite.svg#vk"></use>
                         </svg>
                       </a>
                     </div>
@@ -693,11 +696,11 @@
                       <source type="image/webp" media="(max-width: 1199px)"
                         srcset="img/nadezhda-tablet.webp 1x, img/nadezhda-tablet@2x.webp 2x">
                       <source type="image/webp" srcset="img/nadezhda.webp 1x, img/nadezhda@2x.webp 2x">
-                      <source media="(max-width: 767px)"
+                      <source type="image/png" media="(max-width: 767px)"
                         srcset="img/nadezhda-mobile.png 1x, img/nadezhda-mobile@2x.png 2x">
-                      <source media="(min-width: 768px) and (max-width: 1023px)"
+                      <source type="image/png" media="(min-width: 768px) and (max-width: 1023px)"
                         srcset="img/nadezhda-tablet-two.png 1x, img/nadezhda-tablet-two@2x.png 2x">
-                      <source media="(max-width: 1199px)"
+                      <source type="image/png" media="(max-width: 1199px)"
                         srcset="img/nadezhda-tablet.png 1x, img/nadezhda-tablet@2x.png 2x">
                       <img src="img/nadezhda.png" srcset="img/nadezhda@2x.png 2x" width="255" height="200"
                         alt="Магический Кавказ!">
@@ -706,10 +709,11 @@
                       <h4 class="train__title">Надежда
                         Колесниченко
                       </h4>
-                      <a class="train__social">
+                      <a class="train__social" href="#">
+                        <span class="visually-hidden">Вконтакте</span>
                         <svg width="14" height="8" viewBox="0 0 14 8" fill="currentColor"
                           xmlns="http://www.w3.org/2000/svg">
-                          <use xlink:href="img/sprite.svg#vk"></use>
+                          <use href="img/sprite.svg#vk"></use>
                         </svg>
                       </a>
                     </div>
@@ -728,10 +732,11 @@
                       <h4 class="train__title">Федор
                         Кайгородов
                       </h4>
-                      <a class="train__social">
+                      <a class="train__social" href="#">
+                        <span class="visually-hidden">Вконтакте</span>
                         <svg width="14" height="8" viewBox="0 0 14 8" fill="currentColor"
                           xmlns="http://www.w3.org/2000/svg">
-                          <use xlink:href="img/sprite.svg#vk"></use>
+                          <use href="img/sprite.svg#vk"></use>
                         </svg>
                       </a>
                     </div>
@@ -747,9 +752,9 @@
                       <source type="image/webp" media="(max-width: 1199px)"
                         srcset="img/aleksandr-tablet.webp 1x, img/aleksandr-tablet@2x.webp 2x">
                       <source type="image/webp" srcset="img/aleksandr.webp 1x, img/aleksandr@2x.webp 2x">
-                      <source media="(min-width: 768px) and (max-width: 1023px)"
+                      <source type="image/png" media="(min-width: 768px) and (max-width: 1023px)"
                         srcset="img/aleksandr-tablet-two.png 1x, img/aleksandr-tablet-two@2x.png 2x">
-                      <source media="(max-width: 1199px)"
+                      <source type="image/png" media="(max-width: 1199px)"
                         srcset="img/aleksandr-tablet.png 1x, img/aleksandr-tablet@2x.png 2x">
                       <img src="img/aleksandr.png" srcset="img/aleksandr@2x.png 2x" width="255" height="200"
                         alt="Магический Кавказ!">
@@ -758,10 +763,11 @@
                       <h4 class="train__title">Александр
                         Прокофьев
                       </h4>
-                      <a class="train__social">
+                      <a class="train__social" href="#">
+                        <span class="visually-hidden">Вконтакте</span>
                         <svg width="14" height="8" viewBox="0 0 14 8" fill="currentColor"
                           xmlns="http://www.w3.org/2000/svg">
-                          <use xlink:href="img/sprite.svg#vk"></use>
+                          <use href="img/sprite.svg#vk"></use>
                         </svg>
                       </a>
                     </div>
@@ -777,9 +783,9 @@
                       <source type="image/webp" media="(max-width: 1199px)"
                         srcset="img/svetlana-tablet.webp 1x, img/svetlana-tablet@2x.webp 2x">
                       <source type="image/webp" srcset="img/svetlana.webp 1x, img/svetlana@2x.webp 2x">
-                      <source media="(min-width: 768px) and (max-width: 1023px)"
+                      <source type="image/png" media="(min-width: 768px) and (max-width: 1023px)"
                         srcset="img/svetlana-tablet-two.png 1x, img/svetlana-tablet-two@2x.png 2x">
-                      <source media="(max-width: 1199px)"
+                      <source type="image/png" media="(max-width: 1199px)"
                         srcset="img/svetlana-tablet.png 1x, img/svetlana-tablet@2x.png 2x">
                       <img src="img/svetlana.png" srcset="img/svetlana@2x.png 2x" width="255" height="200"
                         alt="Магический Кавказ!">
@@ -788,10 +794,11 @@
                       <h4 class="train__title">Светлана
                         Афиногенова
                       </h4>
-                      <a class="train__social">
+                      <a class="train__social" href="#">
+                        <span class="visually-hidden">Вконтакте</span>
                         <svg width="14" height="8" viewBox="0 0 14 8" fill="currentColor"
                           xmlns="http://www.w3.org/2000/svg">
-                          <use xlink:href="img/sprite.svg#vk"></use>
+                          <use href="img/sprite.svg#vk"></use>
                         </svg>
                       </a>
                     </div>
@@ -809,11 +816,11 @@
                       <source type="image/webp" media="(max-width: 1199px)"
                         srcset="img/nadezhda-tablet.webp 1x, img/nadezhda-tablet@2x.webp 2x">
                       <source type="image/webp" srcset="img/nadezhda.webp 1x, img/nadezhda@2x.webp 2x">
-                      <source media="(max-width: 767px)"
+                      <source type="image/png" media="(max-width: 767px)"
                         srcset="img/nadezhda-mobile.png 1x, img/nadezhda-mobile@2x.png 2x">
-                      <source media="(min-width: 768px) and (max-width: 1023px)"
+                      <source type="image/png" media="(min-width: 768px) and (max-width: 1023px)"
                         srcset="img/nadezhda-tablet-two.png 1x, img/nadezhda-tablet-two@2x.png 2x">
-                      <source media="(max-width: 1199px)"
+                      <source type="image/png" media="(max-width: 1199px)"
                         srcset="img/nadezhda-tablet.png 1x, img/nadezhda-tablet@2x.png 2x">
                       <img src="img/nadezhda.png" srcset="img/nadezhda@2x.png 2x" width="255" height="200"
                         alt="Магический Кавказ!">
@@ -822,10 +829,11 @@
                       <h4 class="train__title">Надежда
                         Колесниченко
                       </h4>
-                      <a class="train__social">
+                      <a class="train__social" href="#">
+                        <span class="visually-hidden">Вконтакте</span>
                         <svg width="14" height="8" viewBox="0 0 14 8" fill="currentColor"
                           xmlns="http://www.w3.org/2000/svg">
-                          <use xlink:href="img/sprite.svg#vk"></use>
+                          <use href="img/sprite.svg#vk"></use>
                         </svg>
                       </a>
                     </div>
@@ -844,10 +852,11 @@
                       <h4 class="train__title">Федор
                         Кайгородов
                       </h4>
-                      <a class="train__social">
+                      <a class="train__social" href="#">
+                        <span class="visually-hidden">Вконтакте</span>
                         <svg width="14" height="8" viewBox="0 0 14 8" fill="currentColor"
                           xmlns="http://www.w3.org/2000/svg">
-                          <use xlink:href="img/sprite.svg#vk"></use>
+                          <use href="img/sprite.svg#vk"></use>
                         </svg>
                       </a>
                     </div>
@@ -868,7 +877,7 @@
                 <p>
                   <svg width="25" height="25" viewBox="0 0 25 25" fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="img/sprite.svg#map"></use>
+                    <use href="img/sprite.svg#map"></use>
                   </svg>
                   Изучение спортивного
                   туристского движения
@@ -876,21 +885,21 @@
                 <p>
                   <svg width="25" height="25" viewBox="0 0 25 25" fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="img/sprite.svg#boots"></use>
+                    <use href="img/sprite.svg#boots"></use>
                   </svg>
                   Подготовка и&nbsp;техническое снаряжение в походах
                 </p>
                 <p>
                   <svg width="25" height="25" viewBox="0 0 25 25" fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="img/sprite.svg#pine-tree"></use>
+                    <use href="img/sprite.svg#pine-tree"></use>
                   </svg>
                   Лекции по окружающей среде, экологии и гигиене
                 </p>
                 <p>
                   <svg width="25" height="25" viewBox="0 0 25 25" fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="img/sprite.svg#mountain"></use>
+                    <use href="img/sprite.svg#mountain"></use>
                   </svg>
                   Разъяснение сложности горных препятствий
                 </p>
@@ -908,8 +917,8 @@
             <source type="image/webp" media="(max-width: 1199px)"
               srcset="img/about-tablet.webp 1x, img/about-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/about.webp 1x, img/about@2x.webp 2x">
-            <source media="(max-width: 767px)" srcset="img/about-mobile.png 1x, img/about-mobile@2x.png 2x">
-            <source media="(max-width: 1199px)" srcset="img/about-tablet.png 1x, img/about-tablet@2x.png 2x">
+            <source type="image/png" media="(max-width: 767px)" srcset="img/about-mobile.png 1x, img/about-mobile@2x.png 2x">
+            <source type="image/png" media="(max-width: 1199px)" srcset="img/about-tablet.png 1x, img/about-tablet@2x.png 2x">
             <img src="img/about.png" srcset="img/about@2x.png 2x" width="808" height="474" alt="Магический Кавказ!">
           </picture>
         </div>
@@ -941,14 +950,14 @@
             aria-label="назад.">
             <svg width="14" height="9" viewBox="0 0 14 9" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
               stroke="currentColor">
-              <use xlink:href="img/sprite.svg#left"></use>
+              <use href="img/sprite.svg#left"></use>
             </svg>
           </button>
           <button class="arrows-slider__btn arrows-slider__btn--right" id="review-slider-next" type="button"
             aria-label="вперед.">
             <svg width="14" height="9" viewBox="0 0 14 9" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
               stroke="currentColor">
-              <use xlink:href="img/sprite.svg#right"></use>
+              <use href="img/sprite.svg#right"></use>
             </svg>
           </button>
         </div>
@@ -963,9 +972,9 @@
                   <source type="image/webp" media="(max-width: 1199px)"
                     srcset="img/mountaineer-tablet.webp 1x, img/mountaineer-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/mountaineer.webp 1x, img/mountaineer@2x.webp 2x">
-                  <source media="(max-width: 767px)"
+                  <source type="image/png" media="(max-width: 767px)"
                     srcset="img/mountaineer-mobile.png 1x, img/mountaineer-mobile@2x.png 2x">
-                  <source media="(max-width: 1199px)"
+                  <source type="image/png" media="(max-width: 1199px)"
                     srcset="img/mountaineer-tablet.png 1x, img/mountaineer-tablet@2x.png 2x">
                   <img src="img/mountaineer.png" srcset="img/mountaineer@2x.png 2x" width="258" height="253"
                     alt="Магический Кавказ!">
@@ -994,9 +1003,9 @@
                   <source type="image/webp" media="(max-width: 1199px)"
                     srcset="img/mountaineer-two-tablet.webp 1x, img/mountaineer-two-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/mountaineer-two.webp 1x, img/mountaineer-two@2x.webp 2x">
-                  <source media="(max-width: 767px)"
+                  <source type="image/png" media="(max-width: 767px)"
                     srcset="img/mountaineer-two-mobile.png 1x, img/mountaineer-two-mobile@2x.png 2x">
-                  <source media="(max-width: 1199px)"
+                  <source type="image/png" media="(max-width: 1199px)"
                     srcset="img/mountaineer-two-tablet.png 1x, img/mountaineer-two-tablet@2x.png 2x">
                   <img src="img/mountaineer-two.png" srcset="img/mountaineer-two@2x.png 2x" width="258" height="253"
                     alt="Магический Кавказ!">
@@ -1007,7 +1016,7 @@
                   <p>Хороший полноценный поход с&nbsp;разнообразными локациями. В начале дорога идет по лыжне, далее
                     прошли
                     мимо полигона, по болотам, у озер и лесных ручьев, остатков дач конца 19 века.
-                    Было очень интересно!
+                    Было очень интересно!</p>
                   <p>Инструктор Федор дружелюбный, внимательный к технике безопасности и своим туристам.
                     Всем советую этот тур.</p>
                 </div>
@@ -1025,9 +1034,9 @@
                   <source type="image/webp" media="(max-width: 1199px)"
                     srcset="img/mountaineer-three-tablet.webp 1x, img/mountaineer-three-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/mountaineer-three.webp 1x, img/mountaineer-three@2x.webp 2x">
-                  <source media="(max-width: 767px)"
+                  <source type="image/png" media="(max-width: 767px)"
                     srcset="img/mountaineer-three-mobile.png 1x, img/mountaineer-three-mobile@2x.png 2x">
-                  <source media="(max-width: 1199px)"
+                  <source type="image/png" media="(max-width: 1199px)"
                     srcset="img/mountaineer-three-tablet.png 1x, img/mountaineer-three-tablet@2x.png 2x">
                   <img src="img/mountaineer-three.png" srcset="img/mountaineer-three@2x.png 2x" width="258" height="253"
                     alt="Магический Кавказ!">
@@ -1037,7 +1046,7 @@
                 <div class="review__content">
                   <p>Ранее не ходила на такие длинные дистанции. В первый день прошли около 30 км, физически я устала на
                     18 км, поэтому не была уверена, пройду ли до конца. Но я справилась. Второй день прошел легче, чем
-                    ожидала, видимо организм уже привык.
+                    ожидала, видимо организм уже привык.</p>
                   <p>Спасибо ребятам, инструкторам за помощь и поддержку! Я была рада быть в такой компании.</p>
                 </div>
                 <div class="review__footer">
@@ -1054,9 +1063,9 @@
                   <source type="image/webp" media="(max-width: 1199px)"
                     srcset="img/mountaineer-four-tablet.webp 1x, img/mountaineer-four-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/mountaineer-four.webp 1x, img/mountaineer-four@2x.webp 2x">
-                  <source media="(max-width: 767px)"
+                  <source type="image/png" media="(max-width: 767px)"
                     srcset="img/mountaineer-four-mobile.png 1x, img/mountaineer-four-mobile@2x.png 2x">
-                  <source media="(max-width: 1199px)"
+                  <source type="image/png" media="(max-width: 1199px)"
                     srcset="img/mountaineer-four-tablet.png 1x, img/mountaineer-four-tablet@2x.png 2x">
                   <img src="img/mountaineer-four.png" srcset="img/mountaineer-four@2x.png 2x" width="258" height="253"
                     alt="Магический Кавказ!">
@@ -1065,7 +1074,7 @@
               <div class="review__header">
                 <div class="review__content">
                   <p>Это был опыт, изменивший мою жизнь! Думала, не справлюсь, но все получилось! Дух захватывает, когда
-                    наконец-то, преодолев все трудности и препятствия, взбираешься на вершину.
+                    наконец-то, преодолев все трудности и препятствия, взбираешься на вершину.</p>
                   <p>У нас собралась потрясающая команда. Все друг друга поддерживали, по вечерам мы сидели вместе у
                     костра
                     и пели песни. Обязательно повторю такое приключение!</p>
@@ -1084,9 +1093,9 @@
                   <source type="image/webp" media="(max-width: 1199px)"
                     srcset="img/mountaineer-tablet.webp 1x, img/mountaineer-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/mountaineer.webp 1x, img/mountaineer@2x.webp 2x">
-                  <source media="(max-width: 767px)"
+                  <source type="image/png" media="(max-width: 767px)"
                     srcset="img/mountaineer-mobile.png 1x, img/mountaineer-mobile@2x.png 2x">
-                  <source media="(max-width: 1199px)"
+                  <source type="image/png" media="(max-width: 1199px)"
                     srcset="img/mountaineer-tablet.png 1x, img/mountaineer-tablet@2x.png 2x">
                   <img src="img/mountaineer.png" srcset="img/mountaineer@2x.png 2x" width="258" height="253"
                     alt="Магический Кавказ!">
@@ -1115,9 +1124,9 @@
                   <source type="image/webp" media="(max-width: 1199px)"
                     srcset="img/mountaineer-two-tablet.webp 1x, img/mountaineer-two-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/mountaineer-two.webp 1x, img/mountaineer-two@2x.webp 2x">
-                  <source media="(max-width: 767px)"
+                  <source type="image/png" media="(max-width: 767px)"
                     srcset="img/mountaineer-two-mobile.png 1x, img/mountaineer-two-mobile@2x.png 2x">
-                  <source media="(max-width: 1199px)"
+                  <source type="image/png" media="(max-width: 1199px)"
                     srcset="img/mountaineer-two-tablet.png 1x, img/mountaineer-two-tablet@2x.png 2x">
                   <img src="img/mountaineer-two.png" srcset="img/mountaineer-two@2x.png 2x" width="258" height="253"
                     alt="Магический Кавказ!">
@@ -1128,7 +1137,7 @@
                   <p>Хороший полноценный поход с&nbsp;разнообразными локациями. В начале дорога идет по лыжне, далее
                     прошли
                     мимо полигона, по болотам, у озер и лесных ручьев, остатков дач конца 19 века.
-                    Было очень интересно!
+                    Было очень интересно!</p>
                   <p>Инструктор Федор дружелюбный, внимательный к технике безопасности и своим туристам.
                     Всем советую этот тур.</p>
                 </div>
@@ -1146,9 +1155,9 @@
                   <source type="image/webp" media="(max-width: 1199px)"
                     srcset="img/mountaineer-three-tablet.webp 1x, img/mountaineer-three-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/mountaineer-three.webp 1x, img/mountaineer-three@2x.webp 2x">
-                  <source media="(max-width: 767px)"
+                  <source type="image/png" media="(max-width: 767px)"
                     srcset="img/mountaineer-three-mobile.png 1x, img/mountaineer-three-mobile@2x.png 2x">
-                  <source media="(max-width: 1199px)"
+                  <source type="image/png" media="(max-width: 1199px)"
                     srcset="img/mountaineer-three-tablet.png 1x, img/mountaineer-three-tablet@2x.png 2x">
                   <img src="img/mountaineer-three.png" srcset="img/mountaineer-three@2x.png 2x" width="258" height="253"
                     alt="Магический Кавказ!">
@@ -1158,7 +1167,7 @@
                 <div class="review__content">
                   <p>Ранее не ходила на такие длинные дистанции. В первый день прошли около 30 км, физически я устала на
                     18 км, поэтому не была уверена, пройду ли до конца. Но я справилась. Второй день прошел легче, чем
-                    ожидала, видимо организм уже привык.
+                    ожидала, видимо организм уже привык.</p>
                   <p>Спасибо ребятам, инструкторам за помощь и поддержку! Я была рада быть в такой компании.</p>
                 </div>
                 <div class="review__footer">
@@ -1175,9 +1184,9 @@
                   <source type="image/webp" media="(max-width: 1199px)"
                     srcset="img/mountaineer-four-tablet.webp 1x, img/mountaineer-four-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/mountaineer-four.webp 1x, img/mountaineer-four@2x.webp 2x">
-                  <source media="(max-width: 767px)"
+                  <source type="image/png" media="(max-width: 767px)"
                     srcset="img/mountaineer-four-mobile.png 1x, img/mountaineer-four-mobile@2x.png 2x">
-                  <source media="(max-width: 1199px)"
+                  <source type="image/png" media="(max-width: 1199px)"
                     srcset="img/mountaineer-four-tablet.png 1x, img/mountaineer-four-tablet@2x.png 2x">
                   <img src="img/mountaineer-four.png" srcset="img/mountaineer-four@2x.png 2x" width="258" height="253"
                     alt="Магический Кавказ!">
@@ -1186,7 +1195,7 @@
               <div class="review__header">
                 <div class="review__content">
                   <p>Это был опыт, изменивший мою жизнь! Думала, не справлюсь, но все получилось! Дух захватывает, когда
-                    наконец-то, преодолев все трудности и препятствия, взбираешься на вершину.
+                    наконец-то, преодолев все трудности и препятствия, взбираешься на вершину.</p>
                   <p>У нас собралась потрясающая команда. Все друг друга поддерживали, по вечерам мы сидели вместе у
                     костра
                     и пели песни. Обязательно повторю такое приключение!</p>
@@ -1200,7 +1209,6 @@
           </div>
         </div>
       </div>
-      </div>
     </section>
 
     <section class="advantages" data-test="adv">
@@ -1211,9 +1219,9 @@
           <source type="image/webp" media="(max-width: 1199px)"
             srcset="img/clouds-big-tablet.webp 1x, img/clouds-big-tablet@2x.webp 2x">
           <source type="image/webp" srcset="img/clouds-big.webp 1x, img/clouds-big@2x.webp 2x">
-          <source media="(max-width: 1023px)"
+          <source type="image/png" media="(max-width: 1023px)"
             srcset="img/clouds-big-tablet-mini.png 1x, img/clouds-big-tablet-mini@2x.png 2x">
-          <source media="(max-width: 1199px)" srcset="img/clouds-big-tablet.png 1x, img/clouds-big-tablet@2x.png 2x">
+          <source type="image/png" media="(max-width: 1199px)" srcset="img/clouds-big-tablet.png 1x, img/clouds-big-tablet@2x.png 2x">
           <img src="img/clouds-big.png" srcset="img/clouds-big@2x.png 2x" width="875" height="402"
             alt="Магический Кавказ!">
         </picture>
@@ -1225,8 +1233,8 @@
           <source type="image/webp" media="(max-width: 1199px)"
             srcset="img/clouds-tablet.webp 1x, img/clouds-tablet@2x.webp 2x">
           <source type="image/webp" srcset="img/clouds.webp 1x, img/clouds@2x.webp 2x">
-          <source media="(max-width: 1023px)" srcset="img/clouds-tablet-mini.png 1x, img/clouds-tablet-mini@2x.png 2x">
-          <source media="(max-width: 1199px)" srcset="img/clouds-tablet.png 1x, img/clouds-tablet@2x.png 2x">
+          <source type="image/png" media="(max-width: 1023px)" srcset="img/clouds-tablet-mini.png 1x, img/clouds-tablet-mini@2x.png 2x">
+          <source type="image/png" media="(max-width: 1199px)" srcset="img/clouds-tablet.png 1x, img/clouds-tablet@2x.png 2x">
           <img src="img/clouds.png" srcset="img/clouds@2x.png 2x" width="462" height="263" alt="Магический Кавказ!">
         </picture>
       </div>
@@ -1240,7 +1248,7 @@
             <div class="advantages__icon">
               <svg width="22" height="22" viewBox="0 0 22 22" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
                 stroke="currentColor">
-                <use xlink:href="img/sprite.svg#shield"></use>
+                <use href="img/sprite.svg#shield"></use>
               </svg>
             </div>
             <div class="advantages__header">
@@ -1255,13 +1263,14 @@
             <div class="advantages__icon">
               <svg width="22" height="22" viewBox="0 0 22 22" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
                 stroke="currentColor">
-                <use xlink:href="img/sprite.svg#crown"></use>
+                <use href="img/sprite.svg#crown"></use>
               </svg>
             </div>
             <div class="advantages__header">
               <h3>Экспертиза и знания</h3>
               <p>Наша команда опытных гидов имеет обширные знания о местности, погодных условиях и технике
-                безопасности. Это&nbsp;гарантирует, что&nbsp;наши клиенты находятся в&nbsp;надежных руках и могут в полной
+                безопасности. Это&nbsp;гарантирует, что&nbsp;наши клиенты находятся в&nbsp;надежных руках и могут в
+                полной
                 мере
                 насладиться опытом без&nbsp;опасений.</p>
             </div>
@@ -1269,14 +1278,15 @@
           <div class="advantages__slide swiper-slide">
             <div class="advantages__icon">
               <svg width="22" height="22" viewBox="0 0 22 22" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="img/sprite.svg#boots"></use>
+                <use href="img/sprite.svg#boots"></use>
               </svg>
             </div>
             <div class="advantages__header">
               <h3>Оборудование и снаряжение</h3>
               <p>Мы предоставляем клиентам все&nbsp;необходимое оборудование, необходимое для путешествия.
                 Это&nbsp;избавляет
-                клиентов от&nbsp;необходимости покупать, брать с&nbsp;собой снаряжение, что&nbsp;делает путешествие более
+                клиентов от&nbsp;необходимости покупать, брать с&nbsp;собой снаряжение, что&nbsp;делает путешествие
+                более
                 удобным
                 и&nbsp;экономически выгодным.</p>
             </div>
@@ -1285,7 +1295,7 @@
             <div class="advantages__icon">
               <svg width="22" height="22" viewBox="0 0 22 22" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
                 stroke="currentColor">
-                <use xlink:href="img/sprite.svg#path"></use>
+                <use href="img/sprite.svg#path"></use>
               </svg>
             </div>
             <div class="advantages__header">
@@ -1300,7 +1310,7 @@
             <div class="advantages__icon">
               <svg width="22" height="22" viewBox="0 0 22 22" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
                 stroke="currentColor">
-                <use xlink:href="img/sprite.svg#leaf"></use>
+                <use href="img/sprite.svg#leaf"></use>
               </svg>
             </div>
             <div class="advantages__header">
@@ -1317,14 +1327,14 @@
           aria-label="назад.">
           <svg width="14" height="9" viewBox="0 0 14 9" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
             stroke="currentColor">
-            <use xlink:href="img/sprite.svg#left"></use>
+            <use href="img/sprite.svg#left"></use>
           </svg>
         </button>
         <button class="arrows-slider__btn arrows-slider__btn--right" id="advantages-slider-next" type="button"
           aria-label="вперед.">
           <svg width="14" height="9" viewBox="0 0 14 9" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
             stroke="currentColor">
-            <use xlink:href="img/sprite.svg#right"></use>
+            <use href="img/sprite.svg#right"></use>
           </svg>
         </button>
       </div>
@@ -1342,14 +1352,14 @@
             aria-label="назад.">
             <svg width="14" height="9" viewBox="0 0 14 9" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
               stroke="currentColor">
-              <use xlink:href="img/sprite.svg#left"></use>
+              <use href="img/sprite.svg#left"></use>
             </svg>
           </button>
           <button class="arrows-slider__btn arrows-slider__btn--right" id="gallery-slider-next" type="button"
             aria-label="вперед.">
             <svg width="14" height="9" viewBox="0 0 14 9" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
               stroke="currentColor">
-              <use xlink:href="img/sprite.svg#right"></use>
+              <use href="img/sprite.svg#right"></use>
             </svg>
           </button>
         </div>
@@ -1365,8 +1375,8 @@
                 <source type="image/webp" media="(max-width: 1199px)"
                   srcset="img/one-tablet.webp 1x, img/one-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="img/one.webp 1x, img/one@2x.webp 2x">
-                <source media="(max-width: 767px)" srcset="img/one-mobile.png 1x, img/one-mobile@2x.png 2x">
-                <source media="(max-width: 1199px)" srcset="img/one-tablet.png 1x, img/one-tablet@2x.png 2x">
+                <source type="image/png" media="(max-width: 767px)" srcset="img/one-mobile.png 1x, img/one-mobile@2x.png 2x">
+                <source type="image/png" media="(max-width: 1199px)" srcset="img/one-tablet.png 1x, img/one-tablet@2x.png 2x">
                 <img src="img/one.png" srcset="img/one@2x.png 2x" width="275" height="449" alt="Магический Кавказ!">
               </picture>
             </div>
@@ -1380,8 +1390,8 @@
                   <source type="image/webp" media="(max-width: 1199px)"
                     srcset="img/two-tablet.webp 1x, img/two-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/two.webp 1x, img/two@2x.webp 2x">
-                  <source media="(max-width: 767px)" srcset="img/two-mobile.png 1x, img/two-mobile@2x.png 2x">
-                  <source media="(max-width: 1199px)" srcset="img/two-tablet.png 1x, img/two-tablet@2x.png 2x">
+                  <source type="image/png" media="(max-width: 767px)" srcset="img/two-mobile.png 1x, img/two-mobile@2x.png 2x">
+                  <source type="image/png" media="(max-width: 1199px)" srcset="img/two-tablet.png 1x, img/two-tablet@2x.png 2x">
                   <img src="img/two.png" srcset="img/two@2x.png 2x" width="298" height="179" alt="Магический Кавказ!">
                 </picture>
               </div>
@@ -1392,8 +1402,8 @@
                   <source type="image/webp" media="(max-width: 1199px)"
                     srcset="img/three-tablet.webp 1x, img/three-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/three.webp 1x, img/three@2x.webp 2x">
-                  <source media="(max-width: 767px)" srcset="img/three-mobile.png 1x, img/three-mobile@2x.png 2x">
-                  <source media="(max-width: 1199px)" srcset="img/three-tablet.png 1x, img/three-tablet@2x.png 2x">
+                  <source type="image/png" media="(max-width: 767px)" srcset="img/three-mobile.png 1x, img/three-mobile@2x.png 2x">
+                  <source type="image/png" media="(max-width: 1199px)" srcset="img/three-tablet.png 1x, img/three-tablet@2x.png 2x">
                   <img src="img/three.png" srcset="img/three@2x.png 2x" width="298" height="265"
                     alt="Магический Кавказ!">
                 </picture>
@@ -1406,7 +1416,7 @@
                 <source type="image/webp" media="(max-width: 1199px)"
                   srcset="img/four-tablet.webp 1x, img/four-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="img/four.webp 1x, img/four@2x.webp 2x">
-                <source media="(max-width: 1199px)" srcset="img/four-tablet.png 1x, img/four-tablet@2x.png 2x">
+                <source type="image/png" media="(max-width: 1199px)" srcset="img/four-tablet.png 1x, img/four-tablet@2x.png 2x">
                 <img src="img/four.png" srcset="img/four@2x.png 2x" width="272" height="459" alt="Магический Кавказ!">
               </picture>
             </div>
@@ -1444,8 +1454,8 @@
                   <source type="image/webp" media="(max-width: 1199px)"
                     srcset="img/two-tablet.webp 1x, img/two-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/two.webp 1x, img/two@2x.webp 2x">
-                  <source media="(max-width: 767px)" srcset="img/two-mobile.png 1x, img/two-mobile@2x.png 2x">
-                  <source media="(max-width: 1199px)" srcset="img/two-tablet.png 1x, img/two-tablet@2x.png 2x">
+                  <source type="image/png" media="(max-width: 767px)" srcset="img/two-mobile.png 1x, img/two-mobile@2x.png 2x">
+                  <source type="image/png" media="(max-width: 1199px)" srcset="img/two-tablet.png 1x, img/two-tablet@2x.png 2x">
                   <img src="img/two.png" srcset="img/two@2x.png 2x" width="298" height="179" alt="Магический Кавказ!">
                 </picture>
               </div>
@@ -1456,8 +1466,8 @@
                   <source type="image/webp" media="(max-width: 1199px)"
                     srcset="img/three-tablet.webp 1x, img/three-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/three.webp 1x, img/three@2x.webp 2x">
-                  <source media="(max-width: 767px)" srcset="img/three-mobile.png 1x, img/three-mobile@2x.png 2x">
-                  <source media="(max-width: 1199px)" srcset="img/three-tablet.png 1x, img/three-tablet@2x.png 2x">
+                  <source type="image/png" media="(max-width: 767px)" srcset="img/three-mobile.png 1x, img/three-mobile@2x.png 2x">
+                  <source type="image/png" media="(max-width: 1199px)" srcset="img/three-tablet.png 1x, img/three-tablet@2x.png 2x">
                   <img src="img/three.png" srcset="img/three@2x.png 2x" width="298" height="265"
                     alt="Магический Кавказ!">
                 </picture>
@@ -1465,7 +1475,6 @@
             </div>
           </div>
         </div>
-      </div>
       </div>
     </section>
 
@@ -1480,9 +1489,9 @@
           <source type="image/webp" media="(max-width: 1199px)"
             srcset="img/form-tablet.webp 1x, img/form-tablet@2x.webp 2x">
           <source type="image/webp" srcset="img/form.webp 1x, img/form@2x.webp 2x">
-          <source media="(max-width: 767px)" srcset="img/form-mobile.png 1x, img/form-mobile@2x.png 2x">
-          <source media="(max-width: 1023px)" srcset="img/form-tablet-mini.png 1x, img/form-tablet-mini@2x.png 2x">
-          <source media="(max-width: 1199px)" srcset="img/form-tablet.png 1x, img/form-tablet@2x.png 2x">
+          <source type="image/png" media="(max-width: 767px)" srcset="img/form-mobile.png 1x, img/form-mobile@2x.png 2x">
+          <source type="image/png" media="(max-width: 1023px)" srcset="img/form-tablet-mini.png 1x, img/form-tablet-mini@2x.png 2x">
+          <source type="image/png" media="(max-width: 1199px)" srcset="img/form-tablet.png 1x, img/form-tablet@2x.png 2x">
           <img src="img/form.png" srcset="img/form@2x.png 2x" width="1440" height="760" alt="Магический Кавказ!">
         </picture>
       </div>
@@ -1491,7 +1500,7 @@
           <h2>Остались вопросы?</h2>
           <p>Заполните форму и наш оператор свяжется с вами для консультации.</p>
         </div>
-        <fieldset class="form__fieldset">
+        <div class="form__fieldset">
           <div class="form__field-block">
             <div class="form__field-group">
               <label class="visually-hidden" for="telephone">Телефон</label>
@@ -1503,25 +1512,27 @@
             </div>
             <button class="form__button btn" type="submit">Отправить</button>
           </div>
-        </fieldset>
+        </div>
       </div>
     </form>
+  </main>
 
+  <footer class="footer" data-test="footer">
     <section class="contacts" id="contacts">
       <div class="contacts__container container">
         <div class="contacts__wrapper">
           <div class="contacts__block">
             <div class="contacts__header">
               <h2 class="contacts__slogan title title--mini" data-slogan="Контакты">Контакты</h2>
-              <p>Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости. Мы будем рады поделиться
-                увлекательными историями и подобрать для вас тур.</p>
+              <p>Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости. Мы будем рады поделиться
+                увлекательными историями и подобрать для вас тур.</p>
             </div>
             <ul class="contacts__list">
               <li class="contacts__item">
                 <p class="contacts__text">Телефон:</p>
                 <a class="contacts__description" href="tel:+79837454545">+7 983 745-45-45
                   <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="img/sprite.svg#phone"></use>
+                    <use href="img/sprite.svg#phone"></use>
                   </svg>
                 </a>
               </li>
@@ -1529,7 +1540,7 @@
                 <p class="contacts__text">Email</p>
                 <a class="contacts__description" href="mailto:info@lifetour.com">info@lifetour.com
                   <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="img/sprite.svg#mail"></use>
+                    <use href="img/sprite.svg#mail"></use>
                   </svg>
                 </a>
               </li>
@@ -1537,7 +1548,7 @@
                 <p class="contacts__text">Адрес</p>
                 <p class="contacts__description">г. Москва, пр-т Мира, д. 14, офис 101
                   <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="img/sprite.svg#pin-stroke"></use>
+                    <use href="img/sprite.svg#pin-stroke"></use>
                   </svg>
                 </p>
               </li>
@@ -1552,24 +1563,23 @@
               <source type="image/webp" media="(max-width: 1199px)"
                 srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/map.webp 1x, img/map@2x.webp 2x">
-              <source media="(max-width: 767px)" srcset="img/map-mobile.png 1x, img/map-mobile@2x.png 2x">
-              <source media="(max-width: 1023px)" srcset="img/map-tablet-mini.png 1x, img/map-tablet-mini@2x.png 2x">
-              <source media="(max-width: 1199px)" srcset="img/map-tablet.png 1x, img/map-tablet@2x.png 2x">
+              <source type="image/png" media="(max-width: 767px)" srcset="img/map-mobile.png 1x, img/map-mobile@2x.png 2x">
+              <source type="image/png" media="(max-width: 1023px)" srcset="img/map-tablet-mini.png 1x, img/map-tablet-mini@2x.png 2x">
+              <source type="image/png" media="(max-width: 1199px)" srcset="img/map-tablet.png 1x, img/map-tablet@2x.png 2x">
               <img src="img/map.png" srcset="img/map@2x.png 2x" width="585" height="324" alt="Магический Кавказ!">
             </picture>
           </div>
         </div>
       </div>
     </section>
-  </main>
 
-  <footer class="footer" data-test="footer">
     <div class="footer__container container">
       <div class="footer__wrapper">
-        <a class="footer__logo logo">
+        <a class="footer__logo logo" href="index.html">
+          <span class="visually-hidden">Логотип</span>
           <picture>
-            <source media="(max-width: 1199px)" srcset="img/svg/logotype-footer-tablet.svg">
-            <img class="logo" alt="Логотип Путешествия" src="img/svg/logotype-footer.svg">
+            <source type="image/svg+xml" media="(max-width: 1199px)" srcset="img/svg/logotype-footer-tablet.svg">
+            <img class="logo" alt="Логотип Путешествия" src="img/svg/logotype-footer.svg" width="200" height="60">
           </picture>
         </a>
         <div class="footer__nav-wrapper">
@@ -1613,7 +1623,7 @@
           <li class="social__item">
             <a class="social__link" href="https://vk.com/htmlacademy">
               <svg width="14" height="8" viewBox="0 0 14 8" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-                <use xlink:href="img/sprite.svg#vk"></use>
+                <use href="img/sprite.svg#vk"></use>
               </svg>
               <span class="visually-hidden">Мы в Вконтакте.</span>
             </a>
@@ -1621,7 +1631,7 @@
           <li class="social__item">
             <a class="social__link" href="#">
               <svg width="9" height="16" viewBox="0 0 9 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-                <use xlink:href="img/sprite.svg#ok"></use>
+                <use href="img/sprite.svg#ok"></use>
               </svg>
               <span class="visually-hidden">Мы в Однокласниках.</span>
             </a>
@@ -1629,7 +1639,7 @@
           <li class="social__item">
             <a class="social__link" href="#">
               <svg width="14" height="15" viewBox="0 0 14 15" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-                <use xlink:href="img/sprite.svg#reddit"></use>
+                <use href="img/sprite.svg#reddit"></use>
               </svg>
               <span class="visually-hidden">Мы в Редите.</span>
             </a>

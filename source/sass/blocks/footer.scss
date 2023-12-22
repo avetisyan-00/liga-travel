@@ -133,3 +133,17 @@
     margin-bottom: 5px;
   }
 }
+
+.footer__logo {
+  img {
+    width: 200px;
+    height: 60px;
+  }
+
+  @include vp-1199 {
+    img {
+      width: 142;
+      height: 42px;
+    }
+  }
+}

@@ -4,7 +4,6 @@
 }
 
 .background__image {
-
   img {
     position: absolute;
     top: 0;
@@ -19,11 +18,11 @@
   }
 
   @include vp-767 {
-   img {
+    img {
       width: 171px;
       height: 595px;
       top: 110px;
-   }
+    }
   }
 }
 
