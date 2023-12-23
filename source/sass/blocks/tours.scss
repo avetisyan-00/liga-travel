@@ -2,10 +2,10 @@
   position: relative;
   z-index: 3;
   padding-top: 103px;
-  padding-bottom: 94px;
+  padding-bottom: 99px;
 
   @include vp-1199 {
-    padding-top: 48px;
+    padding-top: 49px;
     padding-bottom: 17px;
   }
 
@@ -19,7 +19,7 @@
   margin-bottom: 50px;
 
   @include vp-1199 {
-    margin-bottom: 23px;
+    margin-bottom: 22px;
   }
 }
 
@@ -108,6 +108,13 @@
   }
 }
 
+.tours__days--sun {
+  svg {
+    width: 21px;
+    height: 21px;
+  }
+}
+
 .tours__title {
   position: relative;
   font-size: 24px;
@@ -169,7 +176,7 @@
   margin-top: 54px;
 
   @include vp-1199 {
-    margin-top: 25px;
+    margin-top: 26px;
   }
 }
 

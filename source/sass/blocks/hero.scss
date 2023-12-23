@@ -121,9 +121,9 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
-  padding-top: 13px;
+  padding-top: 12px;
   padding-left: 40px;
-  padding-right: 19px;
+  padding-right: 18px;
   padding-bottom: 14px;
   margin-right: 10px;
   color: #ffffff;
@@ -141,43 +141,40 @@
 
 .hero__bullets {
   position: absolute;
+  z-index: 5;
+  bottom: 91px;
+  right: calc(50% - 610px);
+  left: auto;
+  width: auto;
 
-  &.swiper-pagination-bullets.swiper-pagination-horizontal {
-    bottom: 91px;
-    right: calc(50% - 610px);
-    left: auto;
-    width: auto;
-
-    @include vp-1289 {
-      right: 35px;
-    }
-
-    @include vp-1199 {
-      width: 100%;
-      right: 0;
-      bottom: 34px;
-    }
+  @include vp-1289 {
+    right: 35px;
   }
 
-  &.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  @include vp-1199 {
+    width: 100%;
+    right: 0;
+    bottom: 34px;
+  }
+
+  .hero__bullet {
     margin-left: 10px;
     margin-right: 10px;
-  }
-
-  button {
     width: 10px;
     height: 10px;
     border: 1px solid #ffffff;
     opacity: 1;
     background-color: transparent;
+    border-radius: 50%;
+    padding: 0;
+  }
 
-    &.swiper-pagination-bullet-active {
-      background-color: #ffffff;
-    }
+  .hero__bullet--active {
+    background-color: #ffffff;
   }
 
   @include vp-767 {
-    button {
+    .hero__bullet {
       width: 8px;
       height: 8px;
     }

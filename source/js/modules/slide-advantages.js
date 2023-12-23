@@ -3,6 +3,7 @@ const sliderAdvantages = document.querySelector('.advantages__blocks');
 function initSliderAdvantages() {
   let mySwiper = null;
   function initSwiper() {
+    // eslint-disable-next-line
     mySwiper = new Swiper(sliderAdvantages, {
       centeredSlides: true,
       initialSlide: 2,

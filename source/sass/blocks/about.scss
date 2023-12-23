@@ -14,11 +14,11 @@
 
 .about__slogan {
   margin-top: 0;
-  margin-bottom: 57px;
+  margin-bottom: 56px;
 
   @include vp-1199 {
     padding-left: 5px;
-    margin-bottom: 34px;
+    margin-bottom: 35px;
   }
 
   @include vp-767 {
@@ -36,7 +36,7 @@
   @include vp-1199 {
     max-width: 100%;
     width: 542px;
-    top: 60px;
+    top: 62px;
   }
 
   @include vp-767 {
@@ -79,14 +79,14 @@
     line-height: 22px;
     color: #2d383f;
     margin: 0;
-    margin-bottom: 27px;
+    margin-bottom: 29px;
   }
 
   @include vp-1199 {
     h3 {
       font-size: 18px;
       line-height: 18px;
-      margin-bottom: 12px;
+      margin-bottom: 11px;
     }
   }
 

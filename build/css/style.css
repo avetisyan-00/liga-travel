@@ -1615,9 +1615,9 @@ button,
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
-  padding-top: 13px;
+  padding-top: 12px;
   padding-left: 40px;
-  padding-right: 19px;
+  padding-right: 18px;
   padding-bottom: 14px;
   margin-right: 10px;
   color: #ffffff;
@@ -1634,41 +1634,40 @@ button,
 
 .hero__bullets {
   position: absolute;
-}
-.hero__bullets.swiper-pagination-bullets.swiper-pagination-horizontal {
+  z-index: 5;
   bottom: 91px;
   right: calc(50% - 610px);
   left: auto;
   width: auto;
 }
 @media (max-width: 1289px) {
-  .hero__bullets.swiper-pagination-bullets.swiper-pagination-horizontal {
+  .hero__bullets {
     right: 35px;
   }
 }
 @media (max-width: 1199px) {
-  .hero__bullets.swiper-pagination-bullets.swiper-pagination-horizontal {
+  .hero__bullets {
     width: 100%;
     right: 0;
     bottom: 34px;
   }
 }
-.hero__bullets.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+.hero__bullets .hero__bullet {
   margin-left: 10px;
   margin-right: 10px;
-}
-.hero__bullets button {
   width: 10px;
   height: 10px;
   border: 1px solid #ffffff;
   opacity: 1;
   background-color: transparent;
+  border-radius: 50%;
+  padding: 0;
 }
-.hero__bullets button.swiper-pagination-bullet-active {
+.hero__bullets .hero__bullet--active {
   background-color: #ffffff;
 }
 @media (max-width: 767px) {
-  .hero__bullets button {
+  .hero__bullets .hero__bullet {
     width: 8px;
     height: 8px;
   }
@@ -1813,8 +1812,9 @@ button,
   position: relative;
   text-align: center;
   z-index: 3;
+  padding-top: 30px;
   padding-bottom: 80px;
-  margin-bottom: 89px;
+  margin-bottom: 88px;
 }
 @media (max-width: 1199px) {
   .advantages {
@@ -1881,13 +1881,19 @@ button,
 }
 
 .advantages__slogan {
-  margin-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+@media (max-width: 1199px) {
+  .advantages__slogan {
+    margin-bottom: 29px;
+  }
 }
 
 .advantages__slide {
   width: 380px;
   height: auto;
-  padding: 40px 20px;
+  padding: 40px 19px;
   border: 1px solid rgba(2, 102, 193, 0.1);
   background: #ffffff;
 }
@@ -1903,7 +1909,7 @@ button,
     grid-column: 1/3;
     -ms-grid-column-align: center;
         justify-self: center;
-    padding-top: 29px;
+    padding-top: 30px;
   }
   .advantages__slide:last-child h3 {
     padding-left: 30px;
@@ -1975,7 +1981,8 @@ button,
   .advantages__header h3 {
     font-size: 16px;
     line-height: 16px;
-    margin-top: 24px;
+    margin-top: 26px;
+    margin-bottom: 14px;
   }
 }
 @media (max-width: 767px) {
@@ -2016,7 +2023,7 @@ button,
     display: grid;
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    gap: 28px;
   }
 }
 @media (max-width: 767px) {
@@ -2035,13 +2042,13 @@ button,
 .review {
   position: relative;
   z-index: 4;
-  padding-top: 31px;
-  padding-bottom: 16px;
+  padding-top: 30px;
+  padding-bottom: 15px;
 }
 @media (max-width: 1199px) {
   .review {
-    padding-top: 36px;
-    padding-bottom: 56px;
+    padding-top: 8px;
+    padding-bottom: 55px;
   }
 }
 @media (max-width: 767px) {
@@ -2062,7 +2069,7 @@ button,
 }
 
 .review__arrows {
-  top: 6px;
+  top: 7px;
   right: 45px;
 }
 @media (max-width: 1199px) {
@@ -2078,11 +2085,11 @@ button,
 
 .review__slogan {
   margin-top: 0;
-  margin-bottom: 26px;
+  margin-bottom: 27px;
 }
 @media (max-width: 1199px) {
   .review__slogan {
-    margin-bottom: 37px;
+    margin-bottom: 36px;
   }
 }
 @media (max-width: 767px) {
@@ -2223,6 +2230,7 @@ button,
 }
 
 .review__content {
+  margin-top: -2px;
   margin-bottom: 12px;
 }
 .review__content p {
@@ -2234,6 +2242,7 @@ button,
 }
 @media (max-width: 1199px) {
   .review__content {
+    margin-top: 0;
     margin-bottom: 0;
   }
   .review__content p {
@@ -2266,12 +2275,12 @@ button,
 
 .about__slogan {
   margin-top: 0;
-  margin-bottom: 57px;
+  margin-bottom: 56px;
 }
 @media (max-width: 1199px) {
   .about__slogan {
     padding-left: 5px;
-    margin-bottom: 34px;
+    margin-bottom: 35px;
   }
 }
 @media (max-width: 767px) {
@@ -2291,7 +2300,7 @@ button,
   .about__image {
     max-width: 100%;
     width: 542px;
-    top: 60px;
+    top: 62px;
   }
 }
 @media (max-width: 767px) {
@@ -2335,13 +2344,13 @@ button,
   line-height: 22px;
   color: #2d383f;
   margin: 0;
-  margin-bottom: 27px;
+  margin-bottom: 29px;
 }
 @media (max-width: 1199px) {
   .about__content h3 {
     font-size: 18px;
     line-height: 18px;
-    margin-bottom: 12px;
+    margin-bottom: 11px;
   }
 }
 @media (max-width: 767px) {
@@ -2358,15 +2367,19 @@ button,
   }
 }
 
+.contacts {
+  border-bottom: 1px solid rgba(45, 56, 63, 0.2);
+}
+
 .contacts__container {
-  padding-top: 69px;
+  padding-top: 67px;
   padding-bottom: 95px;
 }
 @media (max-width: 1199px) {
   .contacts__container {
     padding-left: 0;
     padding-right: 0;
-    padding-top: 39px;
+    padding-top: 35px;
     padding-bottom: 38px;
   }
 }
@@ -2392,7 +2405,7 @@ button,
 }
 
 .contacts__block {
-  max-width: 500px;
+  max-width: 482px;
 }
 @media (max-width: 1199px) {
   .contacts__block {
@@ -2512,7 +2525,7 @@ button,
 }
 @media (max-width: 1199px) {
   .contacts__slogan {
-    margin-bottom: 17px;
+    margin-bottom: 18px;
   }
 }
 @media (max-width: 767px) {
@@ -2647,12 +2660,12 @@ button,
       -ms-flex-direction: column;
           flex-direction: column;
   min-height: 761px;
-  padding-top: 299px;
+  padding-top: 297px;
   padding-bottom: 40px;
 }
 @media (max-width: 1199px) {
   .form__container {
-    padding-top: 190px;
+    padding-top: 187px;
     min-height: 680px;
   }
 }
@@ -2758,7 +2771,7 @@ button,
   }
 }
 
-.form__field-group--error input {
+.form__field-group.is-invalid input {
   border-color: #ff121f;
 }
 
@@ -2798,6 +2811,19 @@ button,
 .form__field-group {
   position: relative;
   margin-right: 30px;
+}
+.form__field-group label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
 }
 @media (max-width: 1199px) {
   .form__field-group {
@@ -3131,13 +3157,12 @@ button,
 
 .footer {
   background-color: #ffffff;
-  text-align: center;
-  border-top: 1px solid rgba(45, 56, 63, 0.2);
 }
 
 .footer__container {
   padding-top: 32px;
   padding-bottom: 32px;
+  text-align: center;
 }
 @media (max-width: 1199px) {
   .footer__container {
@@ -3297,7 +3322,7 @@ button,
   grid-template-columns: repeat(3, 30px);
   gap: 15px;
   padding-left: 0;
-  margin: 21px 0 13px;
+  margin: 21px 0 15px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -3348,6 +3373,9 @@ button,
   opacity: 0.3;
 }
 
+.gallery {
+  padding-bottom: 3px;
+}
 @media (max-width: 767px) {
   .gallery {
     padding-left: 15px;
@@ -3372,7 +3400,7 @@ button,
 }
 @media (max-width: 1199px) {
   .gallery__slogan {
-    margin-bottom: 18px;
+    margin-bottom: 17px;
   }
 }
 @media (max-width: 767px) {
@@ -3398,7 +3426,7 @@ button,
   width: 298px;
 }
 .gallery__content .gallery__image:first-child {
-  height: 180px;
+  height: 179px;
   margin-bottom: 5px;
 }
 .gallery__content .gallery__image:last-child {
@@ -3422,7 +3450,7 @@ button,
 .gallery__image {
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  height: 450px;
+  height: 449px;
   width: 275px;
 }
 .gallery__image img {
@@ -3430,6 +3458,12 @@ button,
      object-fit: cover;
   width: 100%;
   height: 100%;
+}
+.gallery__image--three {
+  width: 272px;
+}
+.gallery__image--five {
+  width: 276px;
 }
 @media (max-width: 1199px) {
   .gallery__image {
@@ -3483,7 +3517,7 @@ button,
 @media (max-width: 1199px) {
   .gallery__header {
     max-width: 420px;
-    margin-bottom: 21px;
+    margin-bottom: 22px;
   }
   .gallery__header p {
     font-size: 14px;
@@ -3564,11 +3598,11 @@ button,
   position: relative;
   z-index: 3;
   padding-top: 103px;
-  padding-bottom: 94px;
+  padding-bottom: 99px;
 }
 @media (max-width: 1199px) {
   .tours {
-    padding-top: 48px;
+    padding-top: 49px;
     padding-bottom: 17px;
   }
 }
@@ -3584,7 +3618,7 @@ button,
 }
 @media (max-width: 1199px) {
   .tours__slogan {
-    margin-bottom: 23px;
+    margin-bottom: 22px;
   }
 }
 
@@ -3684,6 +3718,11 @@ button,
   height: 20px;
 }
 
+.tours__days--sun svg {
+  width: 21px;
+  height: 21px;
+}
+
 .tours__title {
   position: relative;
   font-size: 24px;
@@ -3751,7 +3790,7 @@ button,
 }
 @media (max-width: 1199px) {
   .tours__link-wrapper {
-    margin-top: 25px;
+    margin-top: 26px;
   }
 }
 
@@ -3804,11 +3843,12 @@ button,
 .train {
   position: relative;
   z-index: 3;
-  padding-top: 50px;
+  padding-top: 23px;
   padding-bottom: 69px;
 }
 @media (max-width: 1199px) {
   .train {
+    padding-top: 70px;
     padding-bottom: 30px;
   }
 }
@@ -3824,12 +3864,12 @@ button,
   font-weight: 700;
   line-height: 21px;
   color: #2d383f;
-  margin-top: 62px;
+  margin-top: 60px;
   margin-bottom: 51px;
 }
 @media (max-width: 1199px) {
   .train__text {
-    margin: 30px 0 61px;
+    margin: 29px 0 61px;
   }
 }
 @media (max-width: 767px) {
@@ -3840,8 +3880,8 @@ button,
 }
 
 .train__procces {
-  margin-top: 58px;
-  margin-bottom: 26px;
+  margin-top: 57px;
+  margin-bottom: 27px;
 }
 @media (max-width: 1199px) {
   .train__procces {
@@ -3849,7 +3889,7 @@ button,
     font-weight: 700;
     line-height: 18px;
     margin-top: 26px;
-    margin-bottom: 20px;
+    margin-bottom: 19px;
   }
 }
 @media (max-width: 767px) {
@@ -3890,15 +3930,16 @@ button,
   width: 285px;
   height: auto;
   min-height: 356px;
-  padding: 15px;
+  padding: 15px 14px;
 }
 
 .train__slogan {
-  margin-bottom: 31px;
+  margin-top: 0;
+  margin-bottom: 32px;
 }
 @media (max-width: 1199px) {
   .train__slogan {
-    margin-bottom: 20px;
+    margin-bottom: 21px;
   }
 }
 @media (max-width: 767px) {
@@ -3977,7 +4018,7 @@ button,
 }
 .train__general svg {
   position: absolute;
-  top: 3px;
+  top: 2px;
   left: 10px;
 }
 @media (max-width: 1199px) {
@@ -4050,7 +4091,7 @@ button,
     top: 0;
   }
   .train__general svg {
-    top: 21px;
+    top: 23px;
   }
 }
 @media (max-width: 767px) {
@@ -4097,7 +4138,7 @@ button,
 
 .train__arrows {
   right: 0;
-  top: 17px;
+  top: 18px;
 }
 
 .train__title-wrapper {
@@ -4110,8 +4151,8 @@ button,
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin-top: 17px;
-  margin-bottom: 13px;
+  margin-top: 16px;
+  margin-bottom: 14px;
 }
 
 .train__social {
@@ -4120,7 +4161,7 @@ button,
   width: 24px;
   height: 24px;
   border: 1px solid rgba(45, 56, 63, 0.3);
-  margin-top: -2px;
+  margin-top: -1px;
 }
 .train__social svg {
   position: absolute;

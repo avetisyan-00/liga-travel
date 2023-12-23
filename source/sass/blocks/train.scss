@@ -1,10 +1,11 @@
 .train {
   position: relative;
   z-index: 3;
-  padding-top: 50px;
+  padding-top: 23px;
   padding-bottom: 69px;
 
   @include vp-1199 {
+    padding-top: 70px;
     padding-bottom: 30px;
   }
 
@@ -19,11 +20,11 @@
   font-weight: 700;
   line-height: 21px;
   color: #2d383f;
-  margin-top: 62px;
+  margin-top: 60px;
   margin-bottom: 51px;
 
   @include vp-1199 {
-    margin: 30px 0 61px;
+    margin: 29px 0 61px;
   }
 
   @include vp-767 {
@@ -33,15 +34,15 @@
 }
 
 .train__procces {
-  margin-top: 58px;
-  margin-bottom: 26px;
+  margin-top: 57px;
+  margin-bottom: 27px;
 
   @include vp-1199 {
     font-size: 18px;
     font-weight: 700;
     line-height: 18px;
     margin-top: 26px;
-    margin-bottom: 20px;
+    margin-bottom: 19px;
   }
 
   @include vp-767 {
@@ -81,14 +82,15 @@
   width: 285px;
   height: auto;
   min-height: 356px;
-  padding: 15px;
+  padding: 15px 14px;
 }
 
 .train__slogan {
-  margin-bottom: 31px;
+  margin-top: 0;
+  margin-bottom: 32px;
 
   @include vp-1199 {
-    margin-bottom: 20px;
+    margin-bottom: 21px;
   }
 
   @include vp-767 {
@@ -163,7 +165,7 @@
 
   svg {
     position: absolute;
-    top: 3px;
+    top: 2px;
     left: 10px;
   }
 
@@ -240,7 +242,7 @@
     }
 
     svg {
-      top: 21px;
+      top: 23px;
     }
   }
 
@@ -293,15 +295,15 @@
 
 .train__arrows {
   right: 0;
-  top: 17px;
+  top: 18px;
 }
 
 .train__title-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-top: 17px;
-  margin-bottom: 13px;
+  margin-top: 16px;
+  margin-bottom: 14px;
 }
 
 .train__social {
@@ -310,7 +312,7 @@
   width: 24px;
   height: 24px;
   border: 1px solid rgba(45, 56, 63, 0.3);
-  margin-top: -2px;
+  margin-top: -1px;
 
   svg {
     position: absolute;

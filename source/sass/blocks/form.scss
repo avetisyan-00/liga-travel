@@ -12,11 +12,11 @@
   justify-content: flex-start;
   flex-direction: column;
   min-height: 761px;
-  padding-top: 299px;
+  padding-top: 297px;
   padding-bottom: 40px;
 
   @include vp-1199 {
-    padding-top: 190px;
+    padding-top: 187px;
     min-height: 680px;
   }
 
@@ -116,7 +116,7 @@
   }
 }
 
-.form__field-group--error {
+.form__field-group.is-invalid {
   input {
     border-color: #ff121f;
   }
@@ -150,6 +150,19 @@
 .form__field-group {
   position: relative;
   margin-right: 30px;
+
+  label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    border: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(100%);
+  }
 
   @include vp-1199 {
     margin-right: 0;
