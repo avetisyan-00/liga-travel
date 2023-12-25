@@ -1,7 +1,8 @@
 .about {
   position: relative;
   z-index: 3;
-  min-height: 474px;
+  min-height: 527px;
+  padding-top: 59px;
 
   @include vp-1199 {
     min-height: 541px;
@@ -30,7 +31,7 @@
 .about__image {
   position: absolute;
   left: 0;
-  top: -3px;
+  top: 56px;
   max-width: 57%;
 
   @include vp-1199 {

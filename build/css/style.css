@@ -1813,9 +1813,8 @@ button,
   position: relative;
   text-align: center;
   z-index: 3;
-  padding-top: 30px;
-  padding-bottom: 80px;
-  margin-bottom: 88px;
+  padding-top: 44px;
+  padding-bottom: 165px;
 }
 @media (max-width: 1199px) {
   .advantages {
@@ -1999,7 +1998,7 @@ button,
 }
 
 .advantages__arrows {
-  bottom: -4px;
+  bottom: 80px;
   left: 50%;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
@@ -2043,8 +2042,8 @@ button,
 .review {
   position: relative;
   z-index: 4;
-  padding-top: 30px;
-  padding-bottom: 15px;
+  padding-top: 33px;
+  padding-bottom: 1px;
 }
 @media (max-width: 1199px) {
   .review {
@@ -2262,7 +2261,8 @@ button,
 .about {
   position: relative;
   z-index: 3;
-  min-height: 474px;
+  min-height: 527px;
+  padding-top: 59px;
 }
 @media (max-width: 1199px) {
   .about {
@@ -2295,7 +2295,7 @@ button,
 .about__image {
   position: absolute;
   left: 0;
-  top: -3px;
+  top: 56px;
   max-width: 57%;
 }
 @media (max-width: 1199px) {
@@ -2374,7 +2374,7 @@ button,
 }
 
 .contacts__container {
-  padding-top: 67px;
+  padding-top: 68px;
   padding-bottom: 95px;
 }
 @media (max-width: 1199px) {
@@ -2523,7 +2523,7 @@ button,
 
 .contacts__slogan {
   margin: 0;
-  margin-bottom: 22px;
+  margin-bottom: 23px;
 }
 @media (max-width: 1199px) {
   .contacts__slogan {
@@ -2661,9 +2661,9 @@ button,
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-height: 761px;
+  min-height: 759px;
   padding-top: 297px;
-  padding-bottom: 40px;
+  padding-bottom: 41px;
 }
 @media (max-width: 1199px) {
   .form__container {
@@ -2690,13 +2690,14 @@ button,
   line-height: 100%;
   color: #ffffff;
   margin-top: 0;
-  margin-bottom: 15px;
+  margin-bottom: 17px;
 }
 .form__header p {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   color: #ffffff;
+  margin-top: 0;
 }
 @media (max-width: 1199px) {
   .form__header {
@@ -2803,6 +2804,9 @@ button,
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
 }
 @media (max-width: 1199px) {
   .form__field-block {
@@ -2853,16 +2857,18 @@ button,
      object-fit: cover;
 }
 
-.form__button {
+.form .form__button {
   width: 180px;
+  padding-top: 20px;
+  padding-bottom: 18px;
 }
 @media (max-width: 1199px) {
-  .form__button {
+  .form .form__button {
     width: 100%;
   }
 }
 @media (max-width: 767px) {
-  .form .form__button {
+  .form .form .form__button {
     padding: 20px;
   }
 }
@@ -3310,7 +3316,7 @@ button,
 }
 @media (max-width: 1199px) {
   .footer__logo img {
-    width: 142;
+    width: 142px;
     height: 42px;
   }
 }
@@ -3376,6 +3382,7 @@ button,
 }
 
 .gallery {
+  padding-top: 3px;
   padding-bottom: 3px;
 }
 @media (max-width: 767px) {
@@ -3398,6 +3405,7 @@ button,
 }
 
 .gallery__slogan {
+  margin-top: 0;
   margin-bottom: 24px;
 }
 @media (max-width: 1199px) {
@@ -3756,7 +3764,7 @@ button,
 .tours__title::before {
   content: "";
   position: absolute;
-  border: 1px solid #ffffff;
+  background-color: 1px solid #ffffff;
   opacity: 0.2;
   height: 1px;
   width: 80px;
@@ -3864,7 +3872,7 @@ button,
   position: relative;
   z-index: 3;
   padding-top: 23px;
-  padding-bottom: 69px;
+  padding-bottom: 9px;
 }
 @media (max-width: 1199px) {
   .train {
@@ -3885,7 +3893,7 @@ button,
   line-height: 21px;
   color: #2d383f;
   margin-top: 60px;
-  margin-bottom: 51px;
+  margin-bottom: 52px;
 }
 @media (max-width: 1199px) {
   .train__text {
@@ -3900,7 +3908,7 @@ button,
 }
 
 .train__procces {
-  margin-top: 57px;
+  margin-top: 58px;
   margin-bottom: 27px;
 }
 @media (max-width: 1199px) {
@@ -3950,7 +3958,7 @@ button,
   width: 285px;
   height: auto;
   min-height: 356px;
-  padding: 15px 14px;
+  padding: 14px;
 }
 
 .train__slogan {
@@ -4034,12 +4042,14 @@ button,
   height: 14px;
   background-color: #0266c1;
   left: 10px;
-  bottom: -2px;
+  bottom: -1px;
 }
 .train__general svg {
   position: absolute;
   top: 2px;
   left: 10px;
+  width: 25px;
+  height: 25px;
 }
 @media (max-width: 1199px) {
   .train__general {
@@ -4278,11 +4288,11 @@ button,
 }
 .arrows-slider__btn svg {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  top: 12px;
+  left: 10px;
+}
+.arrows-slider__btn--right svg {
+  left: 11px;
 }
 
 .btn {

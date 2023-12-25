@@ -2,7 +2,7 @@
   position: relative;
   z-index: 3;
   padding-top: 23px;
-  padding-bottom: 69px;
+  padding-bottom: 9px;
 
   @include vp-1199 {
     padding-top: 42px;
@@ -21,7 +21,7 @@
   line-height: 21px;
   color: #2d383f;
   margin-top: 60px;
-  margin-bottom: 51px;
+  margin-bottom: 52px;
 
   @include vp-1199 {
     margin: 29px 0 61px;
@@ -34,7 +34,7 @@
 }
 
 .train__procces {
-  margin-top: 57px;
+  margin-top: 58px;
   margin-bottom: 27px;
 
   @include vp-1199 {
@@ -82,7 +82,7 @@
   width: 285px;
   height: auto;
   min-height: 356px;
-  padding: 15px 14px;
+  padding: 14px;
 }
 
 .train__slogan {
@@ -159,7 +159,7 @@
       height: 14px;
       background-color: #0266c1;
       left: 10px;
-      bottom: -2px;
+      bottom: -1px;
     }
   }
 
@@ -167,6 +167,8 @@
     position: absolute;
     top: 2px;
     left: 10px;
+    width: 25px;
+    height: 25px;
   }
 
   @include vp-1199 {
