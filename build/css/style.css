@@ -1478,6 +1478,7 @@ button,
 
 .hero {
   position: relative;
+  margin-bottom: 1px;
 }
 
 .hero__container {
@@ -2090,6 +2091,7 @@ button,
 @media (max-width: 1199px) {
   .review__slogan {
     margin-bottom: 36px;
+    padding-left: 1px;
   }
 }
 @media (max-width: 767px) {
@@ -2170,7 +2172,7 @@ button,
     padding-top: 4px;
   }
   .review__header h3 {
-    margin-bottom: 7px;
+    margin-bottom: 6px;
   }
 }
 @media (max-width: 767px) {
@@ -2246,7 +2248,7 @@ button,
     margin-bottom: 0;
   }
   .review__content p {
-    margin-bottom: 9px;
+    margin-bottom: 10px;
     font-size: 12px;
     line-height: 18px;
   }
@@ -2279,7 +2281,7 @@ button,
 }
 @media (max-width: 1199px) {
   .about__slogan {
-    padding-left: 5px;
+    padding-left: 6px;
     margin-bottom: 35px;
   }
 }
@@ -3602,13 +3604,14 @@ button,
 }
 @media (max-width: 1199px) {
   .tours {
-    padding-top: 49px;
-    padding-bottom: 17px;
+    padding-top: 48px;
+    padding-bottom: 45px;
   }
 }
 @media (max-width: 767px) {
   .tours {
     padding-top: 35px;
+    padding-bottom: 52px;
   }
 }
 
@@ -3721,6 +3724,23 @@ button,
 .tours__days--sun svg {
   width: 21px;
   height: 21px;
+}
+@media (max-width: 1199px) {
+  .tours__days--sun svg {
+    width: 22px;
+    height: 22px;
+    top: 3px;
+    left: -1px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .tours__days--moon svg {
+    width: 18px;
+    height: 18px;
+    top: 5px;
+    left: 1px;
+  }
 }
 
 .tours__title {
@@ -3848,13 +3868,13 @@ button,
 }
 @media (max-width: 1199px) {
   .train {
-    padding-top: 70px;
+    padding-top: 42px;
     padding-bottom: 30px;
   }
 }
 @media (max-width: 767px) {
   .train {
-    padding-top: 10px;
+    padding-top: 6px;
     padding-bottom: 20px;
   }
 }
@@ -4048,10 +4068,16 @@ button,
     bottom: 0;
   }
   .train__general p:nth-child(4n+1)::before {
-    bottom: -8px;
+    bottom: -9px;
   }
   .train__general p:nth-child(4n+2)::before {
-    bottom: -8px;
+    bottom: -9px;
+    left: 11px;
+  }
+  .train__general p:nth-child(4n+2) svg {
+    top: 22px;
+    width: 26px;
+    height: 25px;
   }
   .train__general p:nth-child(4n+2)::after {
     content: "";
@@ -4064,6 +4090,7 @@ button,
     bottom: -60px;
   }
   .train__general p:nth-child(4n+3) {
+    padding-left: 44px;
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;
@@ -4071,6 +4098,11 @@ button,
   .train__general p:nth-child(4n+3)::before {
     bottom: auto;
     top: -6px;
+    left: 11px;
+  }
+  .train__general p:nth-child(4n+3) svg {
+    top: 22px;
+    width: 25px;
   }
   .train__general p:nth-child(4n) {
     -ms-grid-row: 2;
@@ -4222,6 +4254,7 @@ button,
 }
 
 .arrows-slider__btn {
+  position: relative;
   width: 37px;
   height: 35px;
   border: 1px solid transparent;
@@ -4242,6 +4275,14 @@ button,
   background: #999999;
   border-color: transparent;
   color: #ffffff;
+}
+.arrows-slider__btn svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .btn {

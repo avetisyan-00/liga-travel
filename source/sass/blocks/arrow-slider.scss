@@ -6,6 +6,7 @@
 }
 
 .arrows-slider__btn {
+  position: relative;
   width: 37px;
   height: 35px;
   border: 1px solid transparent;
@@ -29,5 +30,12 @@
     background: #999999;
     border-color: transparent;
     color: #ffffff;
+  }
+
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
