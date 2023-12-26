@@ -11,12 +11,12 @@
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
-  min-height: 759px;
+  min-height: 760px;
   padding-top: 296px;
   padding-bottom: 41px;
 
   @include vp-1199 {
-    padding-top: 187px;
+    padding-top: 189px;
     min-height: 680px;
   }
 
@@ -38,7 +38,7 @@
     line-height: 100%;
     color: #ffffff;
     margin-top: 0;
-    margin-bottom: 18px;
+    margin-bottom: 17px;
   }
 
   p {
@@ -192,7 +192,7 @@
 
 .form .form__button {
   width: 180px;
-  padding-top: 20px;
+  padding-top: 19px;
   padding-bottom: 18px;
 
   @include vp-1199 {

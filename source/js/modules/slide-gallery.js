@@ -18,6 +18,7 @@ const initSliderGallery = () => {
         },
 
         768: {
+          slidesPerGroup: 1,
           slidesPerView: 3,
           spaceBetween: 5,
         },
