@@ -4,7 +4,7 @@
 
 .contacts__container {
   padding-top: 68px;
-  padding-bottom: 95px;
+  padding-bottom: 94px;
 
   @include vp-1199 {
     padding-left: 0;
@@ -84,7 +84,7 @@
 .contacts__item {
   position: relative;
   padding-left: 56px;
-  margin-bottom: 35px;
+  margin-bottom: 36px;
 
   svg {
     position: absolute;
@@ -147,7 +147,7 @@
 }
 
 .contacts__header {
-  margin-bottom: 50px;
+  margin-bottom: 49px;
 
   p {
     font-size: 16px;

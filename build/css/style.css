@@ -1831,7 +1831,7 @@ button,
 .advantages__background-top img {
   position: absolute;
   left: 0;
-  top: -170px;
+  top: -124px;
 }
 @media (max-width: 1199px) {
   .advantages__background-top img {
@@ -1857,7 +1857,7 @@ button,
 .advantages__background-bottom img {
   position: absolute;
   right: 0;
-  top: 14px;
+  top: 59px;
 }
 @media (max-width: 1199px) {
   .advantages__background-bottom img {
@@ -2042,7 +2042,7 @@ button,
 .review {
   position: relative;
   z-index: 4;
-  padding-top: 33px;
+  padding-top: 34px;
   padding-bottom: 1px;
 }
 @media (max-width: 1199px) {
@@ -2375,7 +2375,7 @@ button,
 
 .contacts__container {
   padding-top: 68px;
-  padding-bottom: 95px;
+  padding-bottom: 94px;
 }
 @media (max-width: 1199px) {
   .contacts__container {
@@ -2472,7 +2472,7 @@ button,
 .contacts__item {
   position: relative;
   padding-left: 56px;
-  margin-bottom: 35px;
+  margin-bottom: 36px;
 }
 .contacts__item svg {
   position: absolute;
@@ -2537,7 +2537,7 @@ button,
 }
 
 .contacts__header {
-  margin-bottom: 50px;
+  margin-bottom: 49px;
 }
 .contacts__header p {
   font-size: 16px;
@@ -2662,7 +2662,7 @@ button,
       -ms-flex-direction: column;
           flex-direction: column;
   min-height: 759px;
-  padding-top: 297px;
+  padding-top: 296px;
   padding-bottom: 41px;
 }
 @media (max-width: 1199px) {
@@ -2690,7 +2690,7 @@ button,
   line-height: 100%;
   color: #ffffff;
   margin-top: 0;
-  margin-bottom: 17px;
+  margin-bottom: 18px;
 }
 .form__header p {
   font-size: 16px;
@@ -3168,7 +3168,7 @@ button,
 }
 
 .footer__container {
-  padding-top: 32px;
+  padding-top: 31px;
   padding-bottom: 32px;
   text-align: center;
 }
@@ -3560,7 +3560,7 @@ button,
   line-height: 55px;
   opacity: 0.03;
   left: 0;
-  bottom: 0;
+  bottom: -3px;
   color: #2d383f;
 }
 .title--center {
@@ -4028,7 +4028,7 @@ button,
   line-height: 24px;
   color: #2d383f;
   margin: 0;
-  padding-left: 45px;
+  padding-left: 46px;
   padding-right: 10px;
   padding-bottom: 14px;
   width: 253px;
@@ -4047,7 +4047,7 @@ button,
 .train__general svg {
   position: absolute;
   top: 2px;
-  left: 10px;
+  left: 11px;
   width: 25px;
   height: 25px;
 }
