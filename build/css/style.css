@@ -2060,7 +2060,7 @@ button,
 @media (max-width: 767px) {
   .review {
     padding-top: 20px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
   }
 }
 
@@ -2341,6 +2341,7 @@ button,
 }
 @media (max-width: 767px) {
   .about__block {
+    padding-top: 1px;
     padding-left: 0;
     margin-top: -13px;
   }
@@ -2380,6 +2381,7 @@ button,
   }
   .about__content p {
     line-height: 20px;
+    margin-bottom: 28px;
   }
   .about__content p:last-child {
     margin-bottom: 0;
