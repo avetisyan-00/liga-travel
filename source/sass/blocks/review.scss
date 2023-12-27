@@ -10,7 +10,7 @@
   }
 
   @include vp-767 {
-    padding-top: 20px;
+    padding-top: 24px;
     padding-bottom: 0;
   }
 }
@@ -34,6 +34,7 @@
 
   @include vp-767 {
     right: 15px;
+    top: 6px;
   }
 }
 
@@ -68,7 +69,7 @@
 .review__blocks {
   @include vp-767 {
     padding: 15px;
-    padding-bottom: 11px;
+    padding-bottom: 6px;
   }
 }
 
@@ -191,10 +192,10 @@
   }
 
   @include vp-767 {
-    margin-bottom: 7px;
+    margin-bottom: 6px;
 
     p {
-      margin-bottom: 9px;
+      margin-bottom: 10px;
     }
   }
 }

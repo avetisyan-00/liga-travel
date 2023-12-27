@@ -22,7 +22,7 @@
 
   @include vp-767 {
     min-height: 620px;
-    padding-top: 174px;
+    padding-top: 175px;
     padding-left: 31px;
     padding-right: 31px;
   }
@@ -63,6 +63,7 @@
 
   @include vp-767 {
     max-width: 290px;
+    margin-bottom: 8px;
 
     h2 {
       font-size: 22px;
@@ -200,8 +201,7 @@
   }
 
   @include vp-767 {
-    .form & {
-      padding: 20px;
-    }
+    padding-top: 21px;
+    padding-bottom: 19px;
   }
 }

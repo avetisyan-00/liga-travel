@@ -1824,8 +1824,8 @@ button,
 }
 @media (max-width: 767px) {
   .advantages {
-    padding-top: 25px;
-    padding-bottom: 29px;
+    padding-top: 28px;
+    padding-bottom: 42px;
   }
 }
 
@@ -1925,13 +1925,14 @@ button,
 @media (max-width: 767px) {
   .advantages__slide {
     padding: 19px 10px;
+    padding-bottom: 18px;
   }
   .advantages__slide:last-child {
     width: 100%;
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;
-    padding-top: 20px;
+    padding-top: 18px;
   }
 }
 
@@ -1996,6 +1997,7 @@ button,
     font-size: 14px;
     line-height: 14px;
     margin-top: 20px;
+    margin-bottom: 15px;
   }
   .advantages__header p {
     font-size: 12px;
@@ -2036,7 +2038,7 @@ button,
   .advantages__blocks {
     padding-right: 15px;
     padding-left: 15px;
-    padding-top: 20px;
+    padding-top: 19px;
   }
   .advantages__blocks .advantages__wrapper {
     -ms-grid-columns: 1fr;
@@ -2059,7 +2061,7 @@ button,
 }
 @media (max-width: 767px) {
   .review {
-    padding-top: 20px;
+    padding-top: 24px;
     padding-bottom: 0;
   }
 }
@@ -2086,6 +2088,7 @@ button,
 @media (max-width: 767px) {
   .review__arrows {
     right: 15px;
+    top: 6px;
   }
 }
 
@@ -2124,7 +2127,7 @@ button,
 @media (max-width: 767px) {
   .review__blocks {
     padding: 15px;
-    padding-bottom: 11px;
+    padding-bottom: 6px;
   }
 }
 
@@ -2262,10 +2265,10 @@ button,
 }
 @media (max-width: 767px) {
   .review__content {
-    margin-bottom: 7px;
+    margin-bottom: 6px;
   }
   .review__content p {
-    margin-bottom: 9px;
+    margin-bottom: 10px;
   }
 }
 
@@ -2392,12 +2395,12 @@ button,
   border-bottom: 1px solid rgba(45, 56, 63, 0.2);
 }
 
-.contacts__container {
+.contacts .contacts__container {
   padding-top: 67px;
   padding-bottom: 93px;
 }
 @media (max-width: 1199px) {
-  .contacts__container {
+  .contacts .contacts__container {
     padding-left: 0;
     padding-right: 0;
     padding-top: 38px;
@@ -2405,9 +2408,9 @@ button,
   }
 }
 @media (max-width: 767px) {
-  .contacts__container {
+  .contacts .contacts__container {
     padding-top: 26px;
-    padding-bottom: 40px;
+    padding-bottom: 37px;
   }
 }
 
@@ -2535,6 +2538,9 @@ button,
   .contacts__item:last-child {
     margin-bottom: 0;
   }
+  .contacts__item:nth-child(3n+2) {
+    padding-left: 32px;
+  }
   .contacts__item svg {
     width: 22px;
     height: 22px;
@@ -2600,6 +2606,7 @@ button,
   .contacts__text {
     font-size: 14px;
     line-height: 14px;
+    margin-bottom: 5px;
   }
 }
 
@@ -2694,7 +2701,7 @@ button,
 @media (max-width: 767px) {
   .form__container {
     min-height: 620px;
-    padding-top: 174px;
+    padding-top: 175px;
     padding-left: 31px;
     padding-right: 31px;
   }
@@ -2734,6 +2741,7 @@ button,
 @media (max-width: 767px) {
   .form__header {
     max-width: 290px;
+    margin-bottom: 8px;
   }
   .form__header h2 {
     font-size: 22px;
@@ -2888,8 +2896,9 @@ button,
   }
 }
 @media (max-width: 767px) {
-  .form .form .form__button {
-    padding: 20px;
+  .form .form__button {
+    padding-top: 21px;
+    padding-bottom: 19px;
   }
 }
 
@@ -3201,6 +3210,7 @@ button,
 @media (max-width: 767px) {
   .footer__container {
     padding-top: 23px;
+    padding-bottom: 18px;
   }
 }
 
@@ -3453,6 +3463,7 @@ button,
 }
 @media (max-width: 767px) {
   .gallery .gallery__slogan {
+    padding-top: 6px;
     margin-bottom: 15px;
   }
 }
@@ -3929,8 +3940,8 @@ button,
 }
 @media (max-width: 767px) {
   .train {
-    padding-top: 6px;
-    padding-bottom: 21px;
+    padding-top: 7px;
+    padding-bottom: 20px;
   }
 }
 
@@ -4245,6 +4256,30 @@ button,
     height: 19px;
     left: 29px;
     top: 7px;
+  }
+  .train__general p:nth-child(4n+1) svg {
+    width: 22px;
+    height: 19px;
+    left: 29px;
+    top: 6px;
+  }
+  .train__general p:nth-child(4n+2) svg {
+    top: 6px;
+    left: 28px;
+    width: 23px;
+    height: 21px;
+  }
+  .train__general p:nth-child(4n+3) svg {
+    top: 5px;
+    width: 27px;
+    left: 26px;
+    height: 21px;
+  }
+  .train__general p:nth-child(4n+4) svg {
+    left: 27px;
+    top: 5px;
+    width: 25px;
+    height: 20px;
   }
 }
 
